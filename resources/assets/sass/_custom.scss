@@ -1,0 +1,74 @@
+@import "login";
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+    height: 45px;
+    text-align: center;
+    background-color: $main-light;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    margin-bottom: 10px;
+
+    a {
+        color: $main-live;
+        padding: 19px;
+        transition: ease-in-out color .15s;
+
+        &:hover {
+            color: darken($main-live, 10%);
+            text-decoration: none;
+        }
+    }
+}
+
+/*
+ * Extra utilities
+ */
+
+.border-top {
+    border-top: 1px solid rgba($main-dark, 0.2);
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgba($main-dark, 0.2);
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.flex-equal > * {
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+    .flex-md-equal > * {
+        -ms-flex: 1;
+        -webkit-box-flex: 1;
+        flex: 1;
+    }
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/*
+ * Footer
+ */
+#footer {
+    padding: 20px;
+    width: 60%;
+    margin: 20px auto;
+}
+
+
+.card-img-right {
+    height: 100%;
+    border-radius: 0 3px 3px 0;
+}
+
