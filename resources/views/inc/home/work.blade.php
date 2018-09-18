@@ -1,29 +1,61 @@
-<div class="text-center">
-    <div class="container">
-        <h3>Trabalhos</h3>
-        <div class="row">
-            <div class="col-lg-6">
-                <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                <h4>Heading</h4>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+<!-- One -->
+<section id="one" class="wrapper">
+    <div class="text-center">
+        <div class="d-inline-block text-right">
+            <div>
+                <h3>Desenvolvimento</h3>
+                <p>... e adaptação de soluções
+                    de acordo com a <b>sua</b> necessidade.</p>
             </div>
-            <div class="col-lg-6">
-                <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                <h4>Heading</h4>
-                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+            <div>
+                <h3>Gestão</h3>
+                <p>... de usuários, permissões, cursos, categorias, plugins, etc...</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <h4>Outros...</h4>
-                <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                <p><a class="btn btn-secondary" href="/work" role="button">Saiba Mais</a></p>
+        <img class="d-inline-block text-center align-top" src="/img/moodle.png" width="300"/>
+        <div class="d-inline-block text-left">
+            <div>
+                <h3>Otimização</h3>
+                <p>... e automatização de rotinas básicas do ambiente.</p>
+            </div>
+            <div>
+                <h3>Instalação</h3>
+                <p>... e migração de versão sem perder os seus dados e históricos.</p>
             </div>
         </div>
     </div>
-</div>
+<!-- More of One -->
+<div class="inner">
+        <header class="align-center">
+            <h1>Por que usar o Moodle?</h1>
+            <br>
+        </header>
+
+        <!-- Content -->
+        <div class="row">
+            <!-- Break -->
+            <div class="4u 12u$(medium)">
+                <h3><i class="fa fa-globe"></i> Um LMS do mundo</h3>
+                <p><b>O seu problema não é só seu!</b><br>
+                    O Moodle possui uma das maiores comunidades de software livre
+                    do mundo com diversos desenvolvedores, gestores,
+                    escolas, cursos e os mais diferentes usuários.</p>
+            </div>
+            <div class="4u 12u$(medium)">
+                <h3><i class="fa fa-check"></i> Versatilidade</h3>
+                <p><b>O seu problema é o problema de alguém!</b><br>
+                    Com inumeras frentes a Comunidade visa atender o maior
+                    número de necessidades possíveis. Nascendo assim um LMS modularizado,
+                    facilmente customizável, versátil e de todos.</p>
+            </div>
+            <div class="4u$ 12u$(medium)">
+                <h3><i class="fa fa-plug"></i> Integrações</h3>
+                <p><b>A solução é nossa!</b><br>
+                    Acessibilidade, responsividade, webservices e mobile são algumas das
+                    soluções em constante melhoria e desenvolvimento. Além disso a
+                    Comunidade disponibiliza mais de 1.400 plugins para download.</p>
+            </div>
+        </div>
+
+    </div>
+</section>

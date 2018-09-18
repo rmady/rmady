@@ -1,3 +1,4 @@
+@import "home";
 @import "login";
 /*
  * Custom translucent site header
@@ -21,6 +22,16 @@
             text-decoration: none;
         }
     }
+}
+
+#home-banner {
+    padding: 7em 0 12em 0;
+    background-image: url(/img/banner.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 400px;
 }
 
 /*

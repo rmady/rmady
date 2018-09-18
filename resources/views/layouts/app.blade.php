@@ -7,7 +7,7 @@
 </head>
 <body>
     @include('inc.navbar')
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="col-md-12 col-leg-12">
             @include('inc.messages')
