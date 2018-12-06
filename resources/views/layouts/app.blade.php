@@ -2,22 +2,19 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="/css/app.css">
+    <title>RMady</title>
+    <link rel="shortcut icon" href="{{{asset('img/nanologo.png')}}}">
+    <link href="{{{ asset('css/app.css') }}}" rel="stylesheet">
 </head>
 <body>
     @include('inc.navbar')
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12 col-leg-12">
-            @include('inc.messages')
-            @yield('content')
-        </div>
+        @include('inc.messages')
+        @yield('content')
     </div>
 </div>
 @include('inc.footer')
-
-
 </body>
 </html>
 

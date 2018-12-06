@@ -1,0 +1,18 @@
+#frontpage {
+
+    #header {
+        padding: 7em 0 12em 0;
+        background-image: url(/img/banner.jpg);
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        text-align: center;
+        height: 20rem;
+    }
+
+    .cite {
+        padding: 6rem 0 4rem;
+        background: $bg-cite;
+        color: $color-cite;
+    }
+}

@@ -1,0 +1,18 @@
+/*
+ * Custom translucent site header
+ */
+
+ .site-header {
+    height: 4rem;
+    background-color: $white;
+
+    a {
+        color: $primary;
+        transition: ease-in-out color .15s;
+
+        &:hover {
+            color: darken($primary, 10%);
+            text-decoration: none;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-<section id="home-banner">
+<section id="header" class="mb-4">
     <div class="content text-center">
         <h2>Quem sou eu?</h2>
         <p>Especialista em desenvolvimento, gestão, otimização e instalação do Moodle.</p>

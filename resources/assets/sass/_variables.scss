@@ -1,10 +1,13 @@
 //Rmady
-$main-light: #F6F6F6;
-$main-live: #F89406;
-$main-dark: #2B2B2B;
+$primary: #F89406;
+$secondary: #2B2B2B;
+$white: #fff;
+
+$bg-cite: #f6755e;
+$color-cite: #fcdcd6;
 
 // Body
-$body-bg: $main-light;
+$body-bg: $white;
 
 // Borders
 $laravel-border-color: darken($body-bg, 10%);

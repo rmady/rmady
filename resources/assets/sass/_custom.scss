@@ -1,49 +1,19 @@
-@import "home";
+@import "elements";
+@import "frontpage";
 @import "login";
-/*
- * Custom translucent site header
- */
+@import "navbar";
 
-.site-header {
-    height: 45px;
-    text-align: center;
-    background-color: $main-light;
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
-    margin-bottom: 10px;
-
-    a {
-        color: $main-live;
-        padding: 19px;
-        transition: ease-in-out color .15s;
-
-        &:hover {
-            color: darken($main-live, 10%);
-            text-decoration: none;
-        }
-    }
-}
-
-#home-banner {
-    padding: 7em 0 12em 0;
-    background-image: url(/img/banner.jpg);
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-    text-align: center;
-    height: 400px;
-}
 
 /*
  * Extra utilities
  */
 
 .border-top {
-    border-top: 1px solid rgba($main-dark, 0.2);
+    border-top: 1px solid rgba($secondary, 0.2);
 }
 
 .border-bottom {
-    border-bottom: 1px solid rgba($main-dark, 0.2);
+    border-bottom: 1px solid rgba($secondary, 0.2);
 }
 
 .box-shadow {
@@ -82,4 +52,5 @@
     height: 100%;
     border-radius: 0 3px 3px 0;
 }
+
 

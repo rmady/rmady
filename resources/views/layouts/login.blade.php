@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>Login</title>
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="shortcut icon" href="{{{asset('img/nanologo.png')}}}">
+    <link href="{{{ asset('css/app.css') }}}" rel="stylesheet">
 </head>
 <body>
 <div class="bar-header">

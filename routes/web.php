@@ -12,7 +12,7 @@
 */
 
 
-Route::get('/', 'PagesController@getHome');
+Route::get('/', 'PagesController@getFrontpage');
 Route::get('/about', 'PagesController@getAbout');
 Route::get('/energy', 'PagesController@getEnergy');
 //Route::get('/work', 'PagesController@getWork');
@@ -25,4 +25,4 @@ Route::post('/contact/submit', 'MessageController@save');
 Auth::routes();
 Route::get('/auth/logout', 'Auth\LoginController@logout');
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('frontpage');
