@@ -11,18 +11,29 @@
 |
 */
 
+Route::get('/', function () {
+    return view('frontpage');
+});
 
-Route::get('/', 'PagesController@getFrontpage');
-Route::get('/about', 'PagesController@getAbout');
-Route::get('/energy', 'PagesController@getEnergy');
-//Route::get('/work', 'PagesController@getWork');
-Route::resource('work', 'WorkController');
+Route::get('/about', function () {
+    return view('about');
+});
 
-Route::get('/contact', 'PagesController@getContact');
-Route::get('/contact/view', 'MessageController@view');
-Route::post('/contact/submit', 'MessageController@save');
+Route::get('/energy', function () {
+    return view('energy');
+});
+
+Route::get('/work', function () {
+    return view('work');
+});
+
+Route::get('/contact', function () {
+    return view('inc.contact.index');
+});
+
+Route::get('/contact/view', function () {
+    return view('MessageController@view');
+});
 
 Auth::routes();
 Route::get('/auth/logout', 'Auth\LoginController@logout');
-
-Route::get('/home', 'HomeController@index')->name('frontpage');

@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Trabalhos</h1>
+    <div class="col-md-12 p-3">
+        <h1 class="text-center">Trabalhos</h1>
+        <h4 class="text-center mt-5">Em construção <i class="fas fa-cog fa-spin"></i></h4>
+    </div>
 @endsection

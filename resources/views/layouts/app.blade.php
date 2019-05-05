@@ -8,7 +8,7 @@
 </head>
 <body>
     @include('inc.navbar')
-<div class="container-fluid">
+<div class="rmady-content container-fluid">
     <div class="row">
         @include('inc.messages')
         @yield('content')

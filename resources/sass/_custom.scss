@@ -1,0 +1,62 @@
+@import "elements";
+@import "frontpage";
+@import "login";
+@import "navbar";
+
+/*
+ * Extra utilities
+ */
+
+.border-top {
+    border-top: 1px solid rgba($secondary, 0.2);
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgba($secondary, 0.2);
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.flex-equal > * {
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+    .flex-md-equal > * {
+        -ms-flex: 1;
+        -webkit-box-flex: 1;
+        flex: 1;
+    }
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.card-img-right {
+    height: 100%;
+    border-radius: 0 3px 3px 0;
+}
+
+html,
+body {
+    color: $gray-800;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.rmady-content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    padding: 20px;
+    width: 60%;
+    flex-shrink: 0;
+}

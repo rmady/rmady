@@ -10,7 +10,7 @@
 <div class="bar-header">
     <div class="logo-bar"></div>
 </div>
-<div class="container">
+<div class="container rmady-content">
     <div class="row">
         <div class="col-md-12 col-leg-12">
             @include('inc.messages')
@@ -18,9 +18,12 @@
         </div>
     </div>
 </div>
-@include('inc.footer')
-
-
+<div class="footer border-top mx-auto my-1">
+    @include('inc.contact.info')
+    <div class="copyright text-center">
+        <i class="far fa-copyright fa-flip-horizontal"></i> RMady
+    </div>
+</div>
 </body>
 </html>
 

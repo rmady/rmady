@@ -8,24 +8,24 @@
     <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
-                <a class="nav-link {{Request::is('work') ? 'active' : ''}}" href="#">Trabs</a>
+                <a class="nav-link {{Request::is('work') ? 'active' : ''}}" href="{{ url('/work') }}">Trabs</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link {{Request::is('energy') ? 'active' : ''}}" href="#">NGRs</a>
-            </li>
-            <li class="nav-item "> 
-                <a class="nav-link {{Request::is('about') ? 'active' : ''}}" href="#">Sobre</a>
+                <a class="nav-link {{Request::is('energy') ? 'active' : ''}}" href="{{ url('/energy') }}">NGRs</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link {{Request::is('contact') ? 'active' : ''}}" href="#">Fale Conosco</a>
-            </li> 
+                <a class="nav-link {{Request::is('about') ? 'active' : ''}}" href="{{ url('/about') }}">Sobre</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link {{Request::is('contact') ? 'active' : ''}}" href="{{ url('/contact') }}">Fale Comigo</a>
+            </li>
         </ul>
         <span class="navbar-text">
         @if (Auth::guest())
-            <a class="btn btn-outline-warning btn-login" href="#">Entrar</a>
-            <a class="btn" href="#">Registar</a>
-        @else 
-            <a class="btn btn-outline-warning btn-login" title="{{Auth::user()->firstname .' '. Auth::user()->lastname}}" href="#">
+            <a class="btn" href="{{ url('/register') }}">Registar</a>
+            <a class="btn btn-outline-primary btn-login" href="{{ url('/login') }}">Entrar</a>
+        @else
+            <a class="btn btn-outline-primary btn-login" title="{{Auth::user()->firstname .' '. Auth::user()->lastname}}" href="#">
                 <i class="glyphicon glyphicon-user"></i> {{Auth::user()->firstname }}
             </a>
             <a class="btn" href="{{Auth::logout()}}">Sair</a>
