@@ -1,0 +1,17 @@
+block variables
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    link(rel="stylesheet", href="/css/bootstrap.min.css", type="text/css")
+    link(rel="stylesheet", href="/css/bootstrap-theme.min.css", type="text/css")
+    link(rel="stylesheet", href="/css/font-awesome.min.css", type="text/css")
+    link(rel="stylesheet", href="/css/main.css", type="text/css")
+    link(rel="stylesheet", href="/css/header.css", type="text/css")
+    link(rel="icon", href="/images/favicon.png", sizes="192x192")
+    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    title #{title} | RMady
+  body
+  include header.pug
+  div#root.min-vh-100
+    block layout-content

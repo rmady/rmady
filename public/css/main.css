@@ -1,0 +1,12 @@
+
+.no-text-decoration {
+    text-decoration: none;
+}
+
+.view {
+    margin-left: 280px;
+}
+
+*, body {
+    font-family: Arial;
+}

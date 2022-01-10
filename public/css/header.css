@@ -1,0 +1,78 @@
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 280px;
+    background: var(--bs-orange);
+    color: #fff;
+    overflow-y: auto;
+    scrollbar-color: rgba(0,0,0,0.2) var(--bs-orange);
+    scrollbar-width: thin;
+}
+
+.header::-webkit-scrollbar {
+    width: 6px;
+    background-color:  var(--bs-orange);
+}
+
+.header::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 0.5rem;
+}
+
+.header .blog-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.profile-section .bio {
+    font-size: 0.875rem;
+}
+
+header .profile-image {
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+}
+
+.dark-mode-toggle .toggle+.toggle-btn {
+    outline: 0;
+    display: block;
+    width: 70px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 2px;
+    transition: all 0.2s ease-in-out;
+    border: 3px solid rgba(255,255,255,0.4);
+    border-radius: 16px;
+}
+
+.dark-mode-toggle .toggle {
+    display: none;
+}
+
+.dark-mode-toggle .toggle+.toggle-btn:after {
+    left: 0;
+    transition: all 0.2s ease-in-out;
+    background: rgba(255,255,255,0.4);
+    content: "";
+    border-radius: 16px;
+}
+
+.dark-mode-toggle .toggle + .toggle-btn:after {
+    position: relative;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+}
+
+.dark-mode-toggle .toggle:checked+.toggle-btn:after {
+    left: 50%;
+    background: rgba(255,255,255,0.9);
+    background: #663399;
+}

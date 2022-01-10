@@ -1,0 +1,96 @@
+.theme-bg-light {
+    background: #fff9f3 !important;
+}
+
+/** About me section */
+.about-me-section .profile-image {
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    width: 100%;
+    max-width: 350px;
+}
+
+h3.section-title {
+    font-size: 2rem;
+}
+
+.section-title {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+
+.section-title:before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 100%;
+    background: var(--bs-orange);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/** Skills Section */
+
+.skills-icon-holder {
+    background: var(--bs-orange);
+    width: 80px;
+    height: 80px;
+    padding-top: 1.25rem;
+    top: -40px;
+    left: 50%;
+    margin-left: -40px;
+}
+
+.skills-block {
+    max-width: 350px;
+}
+
+/** Clients */
+
+.fa-js-square {
+    color: #F1DE4F;
+}
+
+.fa-vuejs,
+.fa-node-js {
+    color: #64B687;
+}
+
+.fa-php {
+    color: #777BAF;
+}
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+
+.svg-inline--fa.fa-w-14 {
+    width: 2rem;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 2rem;
+    overflow: visible;
+    vertical-align: -0.125rem;
+}
+
+.logo-link img {
+    height: 64px;
+    filter: contrast(.2);
+    opacity: .8;
+    transition: all ease-in-out 300ms;
+}
+
+.logo-link img:hover {
+    filter: contrast(1);
+    opacity: 1;
+}
+
+.item-title {
+    font-size: 1rem;
+    color: #292929;
+    font-weight: bold;
+}

@@ -1,0 +1,70 @@
+header.header.text-center
+    div.force-overflow
+        h1.blog-name.pt-lg-4.mb-0
+            a.no-text-decoration.text-light(href="index.html") Rodrigo Mady
+        
+        nav.navbar.navbar-expand-lg.navbar-dark
+            
+            button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation")
+                span.navbar-toggler-icon
+            
+            div#navigation.collapse.navbar-collapse.flex-column
+                div.profile-section.pt-3.pt-lg-0
+                    img.profile-image.mb-3.mx-auto(src="/images/profile.jpg" alt="image" width="128px")
+                    div.bio #{bio}
+                    div.bio.mb-3 #{welcome}
+                        ul.social-list.list-inline.py-2.mx-auto
+                            li.list-inline-item
+                                a(href="https://www.linkedin.com/in/rodrigo-mady/")
+                                    i.fa.fa-linkedin-square.fa-2x.text-light                                    
+                            li.list-inline-item
+                                a(href="https://www.facebook.com/rodrigo.mady")                                    
+                                    i.fa.fa-facebook-square.fa-2x.text-light     
+                            li.list-inline-item
+                                a(href="https://github.com/rmady")                                    
+                                    i.fa.fa-github-square.fa-2x.text-light   
+                            li.list-inline-item
+                                a(href="mailto:rodrigo.mady@gmail.com")                                    
+                                    i.fa.fa-google.fa-2x.text-light     
+                    hr                
+                ul.navbar-nav.flex-column.text-start
+                    li.nav-item
+                        a.nav-link.active(href="/")
+                            i.fa.fa-user.text-light
+                            span.ml-2 About me  
+                    li.nav-item
+                        a.nav-link(href="portfolio.html")
+                            i.fa.fa-code.text-light
+                            span.ml-2 Portfolio
+                    li.nav-item
+                        a.nav-link(href="services.html")
+                            i.fa.fa-briefcase.text-light
+                            span.ml-2 Services & Pricing  
+                    li.nav-item
+                        a.nav-link(href="resume.html") 
+                            i.fa.fa-file-code-o.text-light
+                            span.ml-2 Resume 
+                    li.nav-item
+                        a.nav-link(href="https://github.com/trema-tech/moodle-theme_trema" target="_blank") 
+                            i.fa.fa-github.text-light
+                            span.ml-2 Theme Trema
+                    li.nav-item
+                        a.nav-link(href="resume.html") 
+                            i.fa.fa-envelope-o.text-light
+                            span.ml-2 Contact 
+                            
+                div.dark-mode-toggle.text-center.w-100
+                    hr.mb-4
+                    ul.navbar-nav.flex-column.text-center
+                        li.nav-item
+                            i.fa.fa-language 
+                            span.ml-2 Site Language
+                        span.float-left en | pt_br
+                div.dark-mode-toggle.text-center.w-100
+                    hr.mb-4
+                    ul.navbar-nav.flex-column.text-center
+                        li.nav-item
+                            i.fa.fa-adjust 
+                            span.ml-2 Purple mode
+                        input#darkmode.toggle(type="checkbox")
+                        label.toggle-btn.mx-auto.mb-0(for="darkmode")

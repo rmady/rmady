@@ -1,0 +1,11 @@
+{
+	"root": {
+		"home": {
+			"title": "Home",
+			"bio": "Hi, my name is Rodrigo Mady and I'm software engineer",
+			"welcome": "Welcome to my personal website!",
+			"untransalated": "This string is only available in english. Its the default fallback"
+		}
+	},
+	"en": {}
+}
