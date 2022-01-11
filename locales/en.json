@@ -2,9 +2,25 @@
 	"root": {
 		"home": {
 			"title": "Home",
-			"bio": "Hi, my name is Rodrigo Mady and I'm software engineer",
+			"bio": "Hi there, my name is Rodrigo Mady and I'm a full-stack developer.",
 			"welcome": "Welcome to my personal website!",
-			"untransalated": "This string is only available in english. Its the default fallback"
+			"sitelanguage": "Site Language",
+			"aboutme":   "About me",
+			"portfolio": "Portfolio",
+			"resume":    "Resume",
+			"services":  "Services",
+			"themetrema": "Theme Trema",
+			"contact": "Contact",
+			"purplemode": "Purple mode",
+			"mainrole": "Software Engineer",
+			"others":   "Others",
+			"roledescription": "I'm software engineer at BairesDev. In backend I work mostly with PHP and NodeJS. In frontend with HTML, CSS, Sass and a little bit with Vue.Js and React",
+			"skills": "Skills Overview",
+			"skillsdescription": "I have more than 7 years of experience working with distance learning web applications. Below is a quick overview of my main technical skill sets and the tools I use. Want to find out more about my experience?",
+			"jobs": "Great places I've worked",
+			"whatidid": "What I did",
+			"ownbussiness": "Freelancer and CEO at Trema Technology, focus on distance learning development projects with data analysis, updating, backend, frontend, management, implantation, implementation, infrastructure, installation, migration, testing, and training using the LMS Moodle"
+
 		}
 	},
 	"en": {}

@@ -23,7 +23,7 @@
 
 .header .blog-name {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .profile-section .bio {
@@ -74,5 +74,37 @@ header .profile-image {
 .dark-mode-toggle .toggle:checked+.toggle-btn:after {
     left: 50%;
     background: rgba(255,255,255,0.9);
-    background: #663399;
+    background: var(--purple);
+}
+
+
+.header {
+	background: linear-gradient(-45deg, var(--bs-orange), #f9690e, #f2784b, #e73c7e);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 5s ease infinite;
+    animation: gradient 5s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

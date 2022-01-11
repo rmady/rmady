@@ -1,3 +1,17 @@
+*, 
+body {
+    font-family: "Lato";
+}
+
+:root {
+    --purple: #663399;
+    --eletricpurple: #8c14fc;
+}
+
+.btn-secondary {
+    background-color: var(--purple);
+    border-color: var(--eletricpurple);
+}
 
 .no-text-decoration {
     text-decoration: none;
@@ -7,6 +21,3 @@
     margin-left: 280px;
 }
 
-*, body {
-    font-family: Arial;
-}

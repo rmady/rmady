@@ -1,0 +1,23 @@
+{
+	"root": {
+		"home": {
+			"title": "Home",
+			"bio": "Olá, meu nome é Rodrigo Mady e sou desenvolvedor full stack.",
+			"welcome": "Bem-vindo ao meu site pessoal!",
+			"sitelanguage": "Idioma do Site",
+			"aboutme":   "Sobre mim",
+			"portfolio": "Portfólio",
+			"resume":    "Currículo",
+			"services":  "Serviços",
+			"themetrema": "Tema Trema",
+			"contact": "Contato",
+			"purplemode": "Modo roxo",
+			"mainrole": "Engenheiro de Software",
+			"others":   "Outros",
+			"roledescription": "Sou engenheiro de software na BairesDev. No backend trabalho principalmente com PHP e NodeJS. No frontend com HTML, CSS, Sass e um pouco com Vue.Js e React.",
+			"skills": "Habilidades em geral",
+			"skillsdescription": "Tenho mais de 7 anos de experiência trabalhando com aplicações web de ensino a distância. Abaixo está uma rápida visão geral dos meus principais conjuntos de habilidades técnicas e das ferramentas que uso."
+		}
+	},
+	"en": {}
+}
