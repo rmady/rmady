@@ -16,7 +16,12 @@
 			"others":   "Outros",
 			"roledescription": "Sou engenheiro de software na BairesDev. No backend trabalho principalmente com PHP e NodeJS. No frontend com HTML, CSS, Sass e um pouco com Vue.Js e React.",
 			"skills": "Habilidades em geral",
-			"skillsdescription": "Tenho mais de 7 anos de experiência trabalhando com aplicações web de ensino a distância. Abaixo está uma rápida visão geral dos meus principais conjuntos de habilidades técnicas e das ferramentas que uso."
+			"skillsdescription": "Tenho mais de 7 anos de experiência trabalhando com aplicações web de ensino a distância. Abaixo está uma rápida visão geral dos meus principais conjuntos de habilidades técnicas e das ferramentas que uso.",
+			"jobs": "Ótimas empresas que trabalhei",
+			"whatidid": "O que eu fiz",
+			"whatididdesc": "Abaixo está uma rápida visão geral dos meus principais conjuntos de habilidades técnicas e tecnologias que usei nessas empresas.",
+			"ownbussiness": "Freelancer e CEO da Trema, foco em projetos de desenvolvimento e ensino a distância. Com análise de dados, atualização, backend, frontend, gerenciamento, implantação, implementação, infraestrutura, instalação, migração, teste e treinamento utilizando o LMS Moodle"
+
 		}
 	},
 	"en": {}

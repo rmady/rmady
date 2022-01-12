@@ -14,7 +14,6 @@ const
     cookieParser     = require('cookie-parser'),
 	config           = require('./config');
 
-
 const port = 3000;
 const app  = express();
 

@@ -17,6 +17,7 @@
     "font-awesome": "^4.7.0",
     "globalize": "^1.7.0",
     "globalize-express": "^1.4.0",
+    "iana-tz-data": "^2019.1.0",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
     "pug": "^3.0.2",

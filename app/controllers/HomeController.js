@@ -40,6 +40,7 @@ var globalizeExpress = require('globalize-express'),
                 skillsdescription: req.Globalize.formatMessage('home/skillsdescription'),
                 jobs: req.Globalize.formatMessage('home/jobs'),
                 whatidid: req.Globalize.formatMessage('home/whatidid'),
+                whatididdesc: req.Globalize.formatMessage('home/whatididdesc'),
                 ownbussiness: req.Globalize.formatMessage('home/ownbussiness'),
             });
         } catch (e) {
