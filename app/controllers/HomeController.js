@@ -42,6 +42,9 @@ var globalizeExpress = require('globalize-express'),
                 whatidid: req.Globalize.formatMessage('home/whatidid'),
                 whatididdesc: req.Globalize.formatMessage('home/whatididdesc'),
                 ownbussiness: req.Globalize.formatMessage('home/ownbussiness'),
+                cite: req.Globalize.formatMessage('home/cite'),
+                talks: req.Globalize.formatMessage('home/talks'),
+                talksdesc: req.Globalize.formatMessage('home/talksdesc'),
             });
         } catch (e) {
             console.log(e);

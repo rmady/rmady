@@ -1,36 +1,54 @@
 
-section.cite.section.py-5.bg-primary
-    div.inner.text-center.text-light
-        blockquote "Cada sonho que você deixa pra trás, é um pedaço do futuro que deixa de existir."
-        cite.author Steve Jobs
+section#cite.position-relative
+    div.waveWrapper.waveAnimation
+        div.inner.text-center.text-light
+            blockquote #{cite}
+            cite.author Steve Jobs
+        div.waveWrapperInner.bgTop
+            div.wave.waveTop(style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')")
+        div.waveWrapperInner.bgMiddle
+            div.wave.waveMiddle(style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')")
+        div.waveWrapperInner.bgBottom
+            div.wave.waveBottom(style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')")
 
-section.talks-section.section.py-5.theme-bg-light
+section.talks-section.section.py-5.theme-bg-light-gradient
     div.container
-        h3.section-title.font-weight-bold.mb-3 Talks
-        div.section-intro.mx-auto.mb-5.text-secondary I have more than 8 years' experience building rich web applications for clients all over the world. Below is a quick overview of my main technical skill sets and tools I use. 
+        h3.section-title.font-weight-bold.mb-3 #{talks}
+        div.section-intro.mx-auto.mb-5 #{talksdesc} 
         div.talks-blocks.mx-auto.pt-5
             div.row.justify-content-evenly
                 div.talks-block.col-12.col-lg-6.mb-5.mb-3.mb-lg-0.bg-white.shadow-sm
                     div.talks-block-inner.py-3.px-5.position-relative
-                        h4.talks-cat.text-center.mb-3.mt-5 Latinoware
+                        h4.talks-cat.text-center.mb-3.mt-2 Latinoware
                         span.talk-year.badge.badge-success 2021
                         span.talk-where.badge
                             i.fa.fa-youtube-play.fa-2x
-                        div.talks-icon-holder.position-absolute.d-inline-block.rounded-circle.text-center
-                            img.talks-icon(src="/images/frontend-icon.svg")
                         div Moodle Themes - How it provides more convenience for the end-user
                         div.text-center.mt-2
-                            a.btn.btn-outline-primary Enjoy
+                            a.btn.btn-outline-primary(href="https://www.youtube.com/watch?v=D3qU93u4-hw" target="_blank") Watch
                 
                 div.talks-block.col-12.col-lg-6.mb-5.mb-3.mb-lg-0.bg-white.shadow-sm
                     div.talks-block-inner.py-3.px-5.position-relative
-                        h4.talks-cat.text-center.mb-3.mt-5 MoodleMoot Brazil
+                        h4.talks-cat.text-center.mb-3.mt-2 MoodleMoot Brazil
                         span.talk-year.badge.badge-success 2021
                         span.talk-where.badge
                             i.fa.fa-youtube-play.fa-2x
-                        div.talks-icon-holder.position-absolute.d-inline-block.rounded-circle.text-center
-                            img.talks-icon(src="/images/frontend-icon.svg")
                         div How Theme Can Solve Your Problems
                         br
                         div.text-center.mt-2
-                            a.btn.btn-outline-primary Enjoy
+                            a.btn.btn-outline-primary(href="https://www.youtube.com/watch?v=gcKWK7h8bq8" target="_blank") Watch
+
+        div.container.mt-4
+            h4.section-title.font-weight-bold.mb-3 Theme Trema
+            div.section-intro.mx-auto.mb-5 #{talksdesc} 
+            div.talks-blocks.mx-auto.pt-5
+                div.row.justify-content-evenly
+                    div.talks-block.col-12.col-lg-6.mb-5.mb-3.mb-lg-0.bg-white.shadow-sm
+                        div.talks-block-inner.py-3.px-5.position-relative
+                            h4.talks-cat.text-center.mb-3 Theme Trema
+                            span.talk-year.badge.badge-success since 2019
+                            span.badge.badge-success more than 18k downloads
+                            div Moodle Themes - How it provides more convenience for the end-user
+                            div.text-center.mt-2
+                                a.btn.btn-outline-primary(href="https://moodle.org/plugins/theme_trema" target="_blank") Download
+                                    i.fa.fa-download.ml-2

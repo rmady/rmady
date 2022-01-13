@@ -17,10 +17,13 @@
 			"roledescription": "I'm software engineer at BairesDev. In backend I work mostly with PHP and NodeJS. In frontend with HTML, CSS, Sass and a little bit with Vue.Js and React",
 			"skills": "Skills Overview",
 			"skillsdescription": "I have more than 7 years of experience working with distance learning web applications. Below is a quick overview of my main technical skill sets and the tools I use. Want to find out more about my experience?",
-			"jobs": "Great places I've worked",
+			"jobs": "Great places I work/worked",
 			"whatidid": "What I did",
 			"whatididdesc": "Below is a quick overview of my main technical skill sets and technologies I used in those companies.",
-			"ownbussiness": "Freelancer and CEO at Trema Technology, focus on distance learning development projects with data analysis, updating, backend, frontend, management, implantation, implementation, infrastructure, installation, migration, testing, and training using the LMS Moodle"
+			"ownbussiness": "Freelancer and CEO at Trema Technology, focus on distance learning development projects with data analysis, updating, backend, frontend, management, implantation, implementation, infrastructure, installation, migration, testing, and training using the LMS Moodle",
+			"cite": "Every dream you leave behind is a piece of the future that ceases to exist",
+			"talks": "Talks",
+			"talksdesc": "I love Open Source Community and started to share my experience with some lectures. As Linux user and maintainer of theme Trema this is a great form to expand my knowledge and learn more."
 
 		}
 	},
