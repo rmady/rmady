@@ -1,70 +1,77 @@
-section.skills-section.section.py-5.theme-bg-light.p-3.p-lg-5
+section.skills-section.section.py-5.p-3.p-lg-5
     div.container
         h3.section-title.font-weight-bold.mb-3 #{skills}
-        div.section-intro.mx-auto.mb-5 #{skillsdescription}
-        div.skills-blocks.mx-auto.pt-5
+        div.section-intro.mx-auto.mb-3 #{skillsdescription}
+        div.skills-blocks.mx-auto.mt-3
             div.row.justify-content-evenly
 
-                div.skills-block.col-12.col-lg-4.mb-5.mb-3.mb-lg-0.bg-white.shadow-sm
-                    div.skills-block-inner.py-4.px-5.position-relative
-                        h4.skills-cat.text-center.mb-3.mt-5 Backend
-                        div.skills-icon-holder.position-absolute.d-inline-block.rounded-circle.text-center
-                            img.skills-icon(src="/images/backend-icon.svg")
-                        
-                        ul.skills-list.list-unstyled
-                            li.mb-2
-                                i.fa.fa-check.me-2.text-primary 
-                                span Moodle                    
-                            li.mb-2
-                                i.fa.fa-check.me-2.text-primary 
-                                span PHP & Laravel
-                            li.mb-2
-                                i.fa.fa-check.me-2.text-primary 
-                                span Node.js                                
-                            li.mb-2
-                                i.fa.fa-check.me-2.text-primary 
-                                span Web services RESTful
-                            li.mb-2
-                                i.fa.fa-check.me-2.text-primary 
-                                span PostgreSQL & MySQL
+                div.skills-block.col-12.col-lg-4
+                    div.box
+                        div.content
+                            div.skills-block-inner.px-2.position-relative
+                                h4.skills-cat.text-center.mb-3.mt-3 Backend                         
+                                ul.skills-list.list-unstyled
+                                    li.mb-2
+                                        i.fa.fa-check.me-2 
+                                        span Moodle                    
+                                    li.mb-2
+                                        i.fa.fa-check.me-2 
+                                        span PHP & Laravel
+                                    li.mb-2
+                                        i.fa.fa-check.me-2 
+                                        span Node.js                                
+                                    li.mb-2
+                                        i.fa.fa-check.me-2 
+                                        span Web services RESTful
+                                    li.mb-2
+                                        i.fa.fa-check.me-2 
+                                        span PostgreSQL & MySQL
+                                
+                            div.skills-icon-holder.position-absolute.d-inline-block.rounded-circle.text-center
+                                img.skills-icon(src="/images/backend-icon.svg")   
                 
-                div.skills-block.col-12.col-lg-4.mb-5.mb-3.mb-lg-0.bg-white.shadow-sm
-                    div.skills-block-inner.py-4.px-5.position-relative
-                        h4.skills-cat.text-center.mb-3.mt-5 Frontend
-                        div.skills-icon-holder.position-absolute.d-inline-block.rounded-circle.text-center
-                            img.skills-icon(src="/images/frontend-icon.svg")
-                        
-                        ul.skills-list.list-unstyled
-                            li.mb-2
-                                i.fa.fa-check.me-2.text-primary 
-                                span JavaScript, jQuery & Ajax
-                            li.mb-2
-                                i.fa.fa-check.me-2.text-primary 
-                                span HTML5, CSS & Sass		
-                            li.mb-2
-                                i.fa.fa-check.me-2.text-primary
-                                span Vue.js & React				        
-                            li.mb-2
-                                i.fa.fa-check.me-2.text-primary 
-                                span Grunt                            
+                div.skills-block.col-12.col-lg-4
+                    div.box
+                        div.content
+                            div.skills-block-inner.px-2.position-relative
+                                h4.skills-cat.text-center.mb-3.mt-3 Frontend
+                                ul.skills-list.list-unstyled
+                                    li.mb-2
+                                        i.fa.fa-check.me-2 
+                                        span JavaScript, jQuery & Ajax
+                                    li.mb-2
+                                        i.fa.fa-check.me-2 
+                                        span HTML5, CSS & Sass		
+                                    li.mb-2
+                                        i.fa.fa-check.me-2
+                                        span Vue.js & React				        
+                                    li.mb-2
+                                        i.fa.fa-check.me-2 
+                                        span Grunt                          
+                            div.skills-icon-holder.position-absolute.d-inline-block.rounded-circle.text-center
+                                img.skills-icon(src="/images/frontend-icon.svg")
                 
-                div.skills-block.col-12.col-lg-4.bg-white.shadow-sm
-                    div.skills-block-inner.py-4.px-5.position-relative
-                        h4.skills-cat.text-center.mb-3.mt-5 #{others}
-                        div.skills-icon-holder.position-absolute.d-inline-block.rounded-circle.text-center
-                            img.skills-icon(src="/images/other-skills-icon.svg")
-                        
-                        ul.skills-list.list-unstyled
-                            li.mb-2
-                                i.fa.fa-check.me-2.text-primary 
-                                span Unit Testing
-                            li.mb-2
-                                i.fa.fa-check.me-2.text-primary 
-                                span Gannt, Astah, Pencil & Bizagi
-                            li.mb-2
-                                i.fa.fa-check.me-2.text-primary 
-                                span Vagrant
-                            li.mb-2
-                                i.fa.fa-check.me-2.text-primary 
-                                span Jenkins, Gitlab & Github
-                
+                div.skills-block.col-12.col-lg-4
+                    div.box
+                        div.content
+                            div.skills-block-inner.px-2.position-relative
+                                h4.skills-cat.text-center.mb-3.mt-3 #{others}                                
+                                ul.skills-list.list-unstyled
+                                    li.mb-2
+                                        i.fa.fa-check.me-2
+                                        span Unit Testing
+                                    li.mb-2
+                                        i.fa.fa-check.me-2
+                                        span Gannt, Astah, Pencil & Bizagi
+                                    li.mb-2
+                                        i.fa.fa-check.me-2 
+                                        span Vagrant
+                                    li.mb-2
+                                        i.fa.fa-check.me-2 
+                                        span Jenkins, Gitlab & Github
+                            div.skills-icon-holder.position-absolute.d-inline-block.rounded-circle.text-center
+                                    img.skills-icon(src="/images/other-skills-icon.svg")
+    div.container.px-5.mt-5
+            h4.mb-3.font-weight-bold Trema Tech  
+                img.ml-1(src="/images/logos/nanologo_trema.png" width="32")
+            div.section-intro.my-3 #{ownbussiness}

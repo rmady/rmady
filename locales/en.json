@@ -18,8 +18,12 @@
 	"jobs": "Great places I work/worked",
 	"whatidid": "What I did",
 	"whatididdesc": "Below is a quick overview of my main technical skill sets and technologies I used in those companies.",
-	"ownbussiness": "Freelancer and CEO at Trema Technology, focus on distance learning development projects with data analysis, updating, backend, frontend, management, implantation, implementation, infrastructure, installation, migration, testing, and training using the LMS Moodle",
+	"ownbussiness": "I have my own small business as a freelancer and CEO at Trema Technology. Focus on distance learning development projects with data analysis, updating, backend, frontend, management, implantation, implementation, infrastructure, installation, migration, testing, and training using the LMS Moodle",
 	"cite": "Every dream you leave behind is a piece of the future that ceases to exist",
 	"talks": "Talks",
-	"talksdesc": "I love Open Source Community and started to share my experience with some lectures. As Linux user and maintainer of theme Trema this is a great form to expand my knowledge and learn more."
+	"talksdesc": "I love Open Source Community and started to share my experience with some lectures. As Linux user and maintainer of theme Trema this is a great form to expand my knowledge and learn more.",
+	"phpdesc": "Moodle is my main skill, I have more than 7 years of experience working with it and making some lectures. I had a minor experience working with Laravel too.",
+	"javascriptdesc": "6 years of experience working with Vanilla and libs. Worked a little bit with Vue.Js and React. And did the Bootcamp in BairesDev with Node JS.",
+	"sqldesc": "My first experience in the development world started with SQL and dynamic reports, since then I worked with: PostgreSQL, MySQL, Oracle and SQL Server.",
+	"htmldesc": "More than 6 years of experience doing frontend. My main Open Source project is the theme Trema for Moodle. I did it using Sass and Mustaches."
 }

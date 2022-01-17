@@ -16,18 +16,64 @@ body.purple-mode .theme-bg-light {
     color: white;
 }
 
-body.purple-mode .theme-bg-light-gradient {
+body.purple-mode .theme-bg-light-gradient,
+body.purple-mode .skills-section {
     background: var(--darkpurple);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, var(--darkpurple) 30%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, var(--darkpurple) 30%);
     color: white;
 }
 
 body.purple-mode .about-me-section,
-body.purple-mode .section-proof {
-    background-color: #242424 !important;
+body.purple-mode .section-proof {    
+    background: linear-gradient(180deg, #000 0%, #121212 30%) !important;
     color: white;
 }
 
-body.purple-mode .profile-teaser .tagline {
+body.purple-mode .profile-teaser .tagline,
+body.purple-mode .item-title {
     color: white;
+}
+
+body.purple-mode .wave {
+    filter: brightness(0);
+}
+
+body.purple-mode .skills-block .box {
+    background: #222222;
+}
+
+body.purple-mode .skills-block .box:before {
+    background: rgba(255, 255, 255, .03);
+}
+
+body.purple-mode .skills-block {
+    box-shadow: inset 2px 5px 5px rgba(0, 0, 0, 0.1),
+        inset -2px -5px 15px rgba(88, 88, 88, 0.5),
+        2px 5px 15px rgba(0, 0, 0, 0.15), 
+        -2px -5px 15px rgba(255, 255, 255, 0.05);
+}
+
+body.purple-mode .section-title:before {
+    background: var(--purple);
+}
+
+body.purple-mode .waveWrapperInner {
+    background-image: linear-gradient(to bottom, #853fcb 30%, var(--darkpurple) 95%);
+}
+
+body.purple-mode .btn-primary {
+    background-color: var(--purple);
+    border-color: var(--eletricpurple);
+}
+
+body.purple-mode .btn-secondary {
+    background-color: #222222;
+    border-color: #292929;
+}
+
+body.purple-mode section.section-proof .box,
+body.purple-mode .talks-block {
+    box-shadow: 0px 30px 40px -20px #525252;    
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, var(--darkpurple) 0%, rgba(0,0,0,1) 50%) !important;
 }

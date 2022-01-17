@@ -67,6 +67,10 @@
             cite: req.t('cite'),
             talks: req.t('talks'),
             talksdesc: req.t('talksdesc'),
+            phpdesc: req.t('phpdesc'),
+            javascriptdesc: req.t('javascriptdesc'),
+            htmldesc: req.t('htmldesc'),
+            sqldesc: req.t('sqldesc'),
         });
     }
  }
