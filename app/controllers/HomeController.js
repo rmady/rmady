@@ -5,10 +5,6 @@
  * @project rmady.com
  */
  
-// Load modules
-var globalizeExpress = require('globalize-express'),
-    cookieParser     = require('cookie-parser');
-
  /**
   * Class Home Controller.
   */
@@ -20,36 +16,58 @@ var globalizeExpress = require('globalize-express'),
      * @param {*} res 
      */
     renderHome = async (req, res) => {
+        const i18next = require('i18next');
+        const lang    = req.query.lang;
         try {
-            res.render("home", { 
-                title:   req.Globalize.formatMessage('home/title'),
-                bio:     req.Globalize.formatMessage('home/bio'),   
-                welcome: req.Globalize.formatMessage('home/welcome'),
-                sitelanguage: req.Globalize.formatMessage('home/sitelanguage'),
-                aboutme:   req.Globalize.formatMessage('home/aboutme'),
-                portfolio: req.Globalize.formatMessage('home/portfolio'),
-                services:  req.Globalize.formatMessage('home/services'),
-                resume:    req.Globalize.formatMessage('home/resume'),
-                contact:    req.Globalize.formatMessage('home/contact'),
-                themetrema: req.Globalize.formatMessage('home/themetrema'),
-                purplemode: req.Globalize.formatMessage('home/purplemode'),
-                mainrole:   req.Globalize.formatMessage('home/mainrole'),
-                others:     req.Globalize.formatMessage('home/others'),
-                roledescription: req.Globalize.formatMessage('home/roledescription'),
-                skills: req.Globalize.formatMessage('home/skills'),
-                skillsdescription: req.Globalize.formatMessage('home/skillsdescription'),
-                jobs: req.Globalize.formatMessage('home/jobs'),
-                whatidid: req.Globalize.formatMessage('home/whatidid'),
-                whatididdesc: req.Globalize.formatMessage('home/whatididdesc'),
-                ownbussiness: req.Globalize.formatMessage('home/ownbussiness'),
-                cite: req.Globalize.formatMessage('home/cite'),
-                talks: req.Globalize.formatMessage('home/talks'),
-                talksdesc: req.Globalize.formatMessage('home/talksdesc'),
-            });
+            if (lang) {
+                i18next
+                .changeLanguage(lang)
+                .then( t => {
+                    req.t = t;
+                    this.renderHomeStrings(res, req);
+                });
+            } else {
+                this.renderHomeStrings(res, req);
+            }          
+            
         } catch (e) {
             console.log(e);
             res.status(500).send(e.message);
         }
+    }
+
+    /**
+     * Lang strings for page home.
+     * 
+     * @param {*} res 
+     * @param {*} req 
+     */
+    renderHomeStrings= async (res, req) => {
+        res.render("home", { 
+            title:   req.t('home'),
+            bio:     req.t('bio'),   
+            welcome: req.t('welcome'),
+            sitelanguage: req.t('sitelanguage'),
+            aboutme:    req.t('aboutme'),
+            portfolio:  req.t('portfolio'),
+            services:   req.t('services'),
+            resume:     req.t('resume'),
+            contact:    req.t('contact'),
+            themetrema: req.t('themetrema'),
+            purplemode: req.t('purplemode'),
+            mainrole:   req.t('mainrole'),
+            others:     req.t('others'),
+            roledescription: req.t('roledescription'),
+            skills: req.t('skills'),
+            skillsdescription: req.t('skillsdescription'),
+            jobs: req.t('jobs'),
+            whatidid: req.t('whatidid'),
+            whatididdesc: req.t('whatididdesc'),
+            ownbussiness: req.t('ownbussiness'),
+            cite: req.t('cite'),
+            talks: req.t('talks'),
+            talksdesc: req.t('talksdesc'),
+        });
     }
  }
 

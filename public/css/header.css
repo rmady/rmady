@@ -34,7 +34,7 @@ header .profile-image {
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
 }
 
-.dark-mode-toggle .toggle+.toggle-btn {
+.purple-mode-toggle .toggle+.toggle-btn {
     outline: 0;
     display: block;
     width: 70px;
@@ -51,11 +51,11 @@ header .profile-image {
     border-radius: 16px;
 }
 
-.dark-mode-toggle .toggle {
+.purple-mode-toggle .toggle {
     display: none;
 }
 
-.dark-mode-toggle .toggle+.toggle-btn:after {
+.purple-mode-toggle .toggle+.toggle-btn:after {
     left: 0;
     transition: all 0.2s ease-in-out;
     background: rgba(255,255,255,0.4);
@@ -63,7 +63,7 @@ header .profile-image {
     border-radius: 16px;
 }
 
-.dark-mode-toggle .toggle + .toggle-btn:after {
+.purple-mode-toggle .toggle + .toggle-btn:after {
     position: relative;
     display: block;
     content: "";
@@ -71,7 +71,7 @@ header .profile-image {
     height: 100%;
 }
 
-.dark-mode-toggle .toggle:checked+.toggle-btn:after {
+.purple-mode-toggle .toggle:checked+.toggle-btn:after {
     left: 50%;
     background: rgba(255,255,255,0.9);
     background: var(--purple);

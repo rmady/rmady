@@ -1,0 +1,33 @@
+body.purple-mode .header {    
+    background: var(--purple);
+    scrollbar-color: rgba(0,0,0,0.2) var(--purple);
+}
+
+body.purple-mode .header::-webkit-scrollbar {
+    background-color:  var(--purple);
+}
+
+body.purple-mode .purple-mode-toggle .toggle:checked+.toggle-btn:after {
+    background: var(--darkpurple);
+}
+
+body.purple-mode .theme-bg-light {
+    background: var(--darkpurple) !important;
+    color: white;
+}
+
+body.purple-mode .theme-bg-light-gradient {
+    background: var(--darkpurple);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, var(--darkpurple) 30%);
+    color: white;
+}
+
+body.purple-mode .about-me-section,
+body.purple-mode .section-proof {
+    background-color: #242424 !important;
+    color: white;
+}
+
+body.purple-mode .profile-teaser .tagline {
+    color: white;
+}

@@ -32,9 +32,9 @@ header.header.text-center
                         li.nav-item
                             i.fa.fa-language 
                             span.ml-2 #{sitelanguage}
-                        span.float-left 
-                            a.text-light.no-text-decoration.d-inline-block(href="/?lang=en") en 
-                            a.text-light.no-text-decoration.d-inline-block.ml-2(href="/?lang=pt") pt_br
+                        span.float-left
+                            a.d-inline-block.text-light.no-text-decoration(href="/?lang=en") en
+                            a.d-inline-block.text-light.no-text-decoration.ml-1(href="/?lang=pt") pt
                     hr.mb-4            
                 ul.navbar-nav.flex-column.text-start
                     li.nav-item
@@ -61,11 +61,11 @@ header.header.text-center
                         a.nav-link(href="resume.html") 
                             i.fa.fa-envelope-o.text-light
                             span.ml-2 #{contact} 
-                div.dark-mode-toggle.text-center.w-100
+                div.purple-mode-toggle.text-center.w-100
                     hr.mb-4
                     ul.navbar-nav.flex-column.text-center
                         li.nav-item
                             i.fa.fa-adjust 
                             span.ml-2 #{purplemode}
-                        input#darkmode.toggle(type="checkbox" onclick="purpleMode();")
-                        label.toggle-btn.mx-auto.mb-0(for="darkmode")
+                        input#purplemode.toggle(type="checkbox" onclick="purpleMode()")
+                        label.toggle-btn.mx-auto.mb-0(for="purplemode")
