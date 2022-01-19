@@ -15,37 +15,51 @@ section.talks-section.section.py-5.theme-bg-light-gradient.p-3.p-lg-5
     div.container
         h3.section-title.font-weight-bold.mb-3 #{talks}
         div.section-intro.mx-auto.mb-5 #{talksdesc} 
-        div.talks-blocks.mx-auto.pt-5
-            div.row.justify-content-evenly
-                div.talks-block.col-12.col-lg-6.mb-5.mb-3.mb-lg-0.bg-white.shadow-sm
-                    div.talks-block-inner.py-3.px-5.position-relative
-                        h4.talks-cat.text-center.mb-3.mt-2 Latinoware
+        div.talks-blocks.mx-auto
+            div.row.justify-content-between
+                div.talks-block.d-flex.col-12.col-lg-6.mb-5.mb-3.mb-lg-0.bg-white
+                    div                           
+                        iframe(width="390" height="240" src="https://www.youtube.com/embed/D3qU93u4-hw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                    div.talks-block-inner.py-1.px-3.position-relative
+                        h4.talks-cat.mb-3 Latinoware
                         span.talk-year.badge.badge-success 2021
                         span.talk-where.badge
                             i.fa.fa-youtube-play.fa-2x
                         div Moodle Themes - How it provides more convenience for the end-user
-                        div.text-center.mt-2
-                            a.btn.btn-outline-primary(href="https://www.youtube.com/watch?v=D3qU93u4-hw" target="_blank") Watch
-                
-                div.talks-block.col-12.col-lg-6.mb-5.mb-3.mb-lg-0.bg-white.shadow-sm
-                    div.talks-block-inner.py-3.px-5.position-relative
-                        h4.talks-cat.text-center.mb-3.mt-2 MoodleMoot Brazil
+                        
+                div.talks-block.d-flex.col-12.col-lg-6.mb-5.mb-3.mb-lg-0.bg-white
+                    div                           
+                        iframe(width="390" height="240" src="https://www.youtube.com/embed/gcKWK7h8bq8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                    div.talks-block-inner.py-1.px-3.position-relative
+                        h4.talks-cat.mb-3 MoodleMoot Brazil
                         span.talk-year.badge.badge-success 2021
                         span.talk-where.badge
                             i.fa.fa-youtube-play.fa-2x
                         div How Theme Can Solve Your Problems
-                        br
-                        div.text-center.mt-2
-                            a.btn.btn-outline-primary(href="https://www.youtube.com/watch?v=gcKWK7h8bq8" target="_blank") Watch
-
+                
         div.container.mt-4.p-lg-5
-            h4.font-weight-bold.mb-3 Theme Trema
-            div.section-intro.mx-auto.mb-5 #{talksdesc} 
+            h4.font-weight-bold.mb-3 #{trema}
+            div.section-intro.mx-auto.mb-5 #{tremadesc} 
+            div.infolabels.d-flex.align-items-center.mb-3 
+                div.timelastreleased.mr-3
+                    span.stats-timelastreleased
+                div.usage.mr-3
+                    span.stats-sites(title="Used on 3798 site(s)") 
+                        i.fa.fa-map-marker(aria-hidden="true") 
+                        span.ml-1 3798 sites
+                div.downloads.mr-3
+                    span.stats-downloads(title="Total downloads in last 90 days: 2617")
+                        i.fa.fa-download(aria-hidden="true")  
+                        span.ml-1 2k downloads
+                div.favourites.mr-3
+                    span.stats-fans(title="Favourited by 82 user(s)")
+                        i.fa.fa-heart(aria-hidden="true")  
+                        span.ml-1 82 fans
             div.talks-blocks.mx-auto.pt-5
                 div.row.justify-content-evenly
                     div.talks-block.col-12.col-lg-6.mb-5.mb-3.mb-lg-0.bg-white.shadow-sm
                         div.talks-block-inner.py-3.px-5.position-relative
-                            h4.talks-cat.text-center.mb-3 Theme Trema
+                            h4.talks-cat.text-center.mb-3 #{trema}
                             span.talk-year.badge.badge-success since 2019
                             span.badge.badge-success more than 18k downloads
                             div Moodle Themes - How it provides more convenience for the end-user

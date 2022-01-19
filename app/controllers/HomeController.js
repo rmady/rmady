@@ -64,6 +64,7 @@
             whatidid: req.t('whatidid'),
             whatididdesc: req.t('whatididdesc'),
             ownbussiness: req.t('ownbussiness'),
+            ownbussinesslink: req.t('ownbussinesslink'),
             cite: req.t('cite'),
             talks: req.t('talks'),
             talksdesc: req.t('talksdesc'),
@@ -71,6 +72,10 @@
             javascriptdesc: req.t('javascriptdesc'),
             htmldesc: req.t('htmldesc'),
             sqldesc: req.t('sqldesc'),
+            trema: req.t('trema'),
+            tremadesc: req.t('tremadesc'),
+            footertitle: req.t('footertitle'),
+            footerdesc: req.t('footerdesc'),
         });
     }
  }

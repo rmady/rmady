@@ -330,21 +330,27 @@ section.section-proof h2 {
 }
 
 .talks-block {
-    max-width: 450px;
+    max-width: 630px;
+    padding: 0.5rem;
+    padding-bottom: 0;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+    border-radius: 5px;
+    border-top: 3px solid var(--bs-orange);
 }
 
 .talks-block .talk-year {
     position: absolute;
-    left: 0;
-    top: -15px;
+    right: 20%;
+    bottom: -10px;
     color: #fff;
     background-color: var(--purple);
+    width: 50%;
 }
 
 .talks-block .talk-where {
     position: absolute;
-    right: 0;
-    top: -15px;
+    right: 35%;
+    bottom: 30px;
     height: 40px;
     background-color: red;
     border-radius: 20px;
