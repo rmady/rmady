@@ -28,8 +28,8 @@
 	"sqldesc": "Minha primeira experiência no mundo da programação começou com SQL e relatórios dinâmicos, desde então trabalhei com: PostgreSQL, MySQL, Oracle e SQL Server.",
 	"htmldesc": "Mais de 6 anos de experiência trabalhando com frontend. Meu principal projeto Open Source é o tema Trema para o Moodle. Eu ele isso usando Sass e Mustaches.",
 	"trema": "Tema Trema",
-	"tremadesc": "Tema Trema desc",
-	"footertitle": "Interested in hiring me for your project?",
-	"footerdesc": "Looking for an experienced full-stack developer to build your web app or ship your software product? To start an initial chat, just drop me an email"
+	"tremadesc": "Trema tem foco em usabilidade e beleza, os desenvolvedores tentaram fazer algo limpo e utilizável para todos na comunidade.",
+	"footertitle": "Interessado em me contratar para o seu projeto?",
+	"footerdesc": "Procurando um desenvolvedor full-stack experiente para criar sua aplicação de ensino a distância em Moodle? Para iniciar um bate-papo inicial, basta me enviar um e-mail"
 
 }
