@@ -1,7 +1,7 @@
 header.header.text-center
     div.force-overflow
         h2.blog-name.pt-lg-4.mb-0
-            a.no-text-decoration.text-light(href="index.html") Rodrigo Mady
+            a.no-text-decoration.text-light(href="/") Rodrigo Mady
         
         nav.navbar.navbar-expand-lg.navbar-dark
             
@@ -15,16 +15,16 @@ header.header.text-center
                     div.bio.mb-3 #{welcome}
                         ul.social-list.list-inline.py-2.mx-auto
                             li.list-inline-item
-                                a(href="https://www.linkedin.com/in/rodrigo-mady/")
+                                a(href="https://www.linkedin.com/in/rodrigo-mady/" target="_blank")
                                     i.fa.fa-linkedin-square.fa-2x.text-light                                    
                             li.list-inline-item
-                                a(href="https://www.facebook.com/rodrigo.mady")                                    
+                                a(href="https://www.facebook.com/rodrigo.mady" target="_blank")                                    
                                     i.fa.fa-facebook-square.fa-2x.text-light     
                             li.list-inline-item
-                                a(href="https://github.com/rmady")                                    
+                                a(href="https://github.com/rmady" target="_blank")                                    
                                     i.fa.fa-github-square.fa-2x.text-light   
                             li.list-inline-item
-                                a(href="mailto:rodrigo.mady@gmail.com")                                    
+                                a(href="mailto:rodrigo.mady@gmail.com" target="_blank")                                    
                                     i.fa.fa-google.fa-2x.text-light
                     hr.mb-4
                 div.dark-mode-toggle.text-center.w-100
@@ -33,34 +33,34 @@ header.header.text-center
                             i.fa.fa-language 
                             span.ml-2 #{sitelanguage}
                         span.float-left
-                            a.d-inline-block.text-light.no-text-decoration(href="/?lang=en") en
-                            a.d-inline-block.text-light.no-text-decoration.ml-1(href="/?lang=pt") pt
+                            a.d-inline-block.text-light.no-text-decoration(href="?lang=en") en
+                            a.d-inline-block.text-light.no-text-decoration.ml-1(href="?lang=pt") pt
                     hr.mb-4            
                 ul.navbar-nav.flex-column.text-start
                     li.nav-item
-                        a.nav-link.active(href="/")
+                        a.nav-link(href="/")
                             i.fa.fa-user.text-light
                             span.ml-2 #{aboutme}  
                     li.nav-item
-                        a.nav-link(href="portfolio.html")
+                        a.nav-link(href="/portfolio")
                             i.fa.fa-code.text-light
                             span.ml-2 #{portfolio}
                     li.nav-item
-                        a.nav-link(href="services.html")
+                        a.nav-link(href="/services")
                             i.fa.fa-briefcase.text-light
                             span.ml-2 #{services}  
                     li.nav-item
-                        a.nav-link(href="resume.html") 
+                        a.nav-link(href="/cv") 
                             i.fa.fa-file-code-o.text-light
                             span.ml-2 #{resume}  
+                    li.nav-item
+                        a.nav-link(href="/contact") 
+                            i.fa.fa-envelope-o.text-light
+                            span.ml-2 #{contact} 
                     li.nav-item
                         a.nav-link(href="https://github.com/trema-tech/moodle-theme_trema" target="_blank") 
                             i.fa.fa-github.text-light
                             span.ml-2 #{themetrema}
-                    li.nav-item
-                        a.nav-link(href="resume.html") 
-                            i.fa.fa-envelope-o.text-light
-                            span.ml-2 #{contact} 
                 div.purple-mode-toggle.text-center.w-100
                     hr.mb-4
                     ul.navbar-nav.flex-column.text-center

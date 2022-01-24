@@ -4,10 +4,20 @@
     height: 100%;
     overflow: hidden;
     position: relative;
+    margin-left: 280px;
 }
 
 #footer .container {
     z-index: 10;
+}
+
+#footer .copyleft {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    display: inline-block;
 }
 
 .space {

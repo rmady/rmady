@@ -117,3 +117,13 @@ body.purple-mode .stars2 {
         radial-gradient(2.5px 2.5px at 100px 5px, white, rgba(255, 255, 255, 0)), 
         radial-gradient(2.5px 2.5px at 5px 5px, white, rgba(255, 255, 255, 0));
 }
+
+body.purple-mode .btn-outline-primary {
+    color: var(--lightpurple);
+    border-color: var(--purple);
+}
+
+body.purple-mode .btn-outline-primary:hover {
+    background-color: var(--eletricpurple);
+    border-color: var(--purple);
+}

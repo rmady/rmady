@@ -1,10 +1,31 @@
 section#footer.section.py-5.bg-dark
     div.container.position-relative
         h3.font-weight-bold.mb-2 #{footertitle}
-        div.section-intro.mx-auto.mb-3 #{footerdesc}
-        div.text-center
-            a.theme-btn-on-bg.btn(href="contact.htmlLet's") Talk            
-        div.text-center.mt-3
-            img(src="/images/favicon.png" width="32px")
+        div.section-intro.mx-auto.mb-1 #{footerdesc}      
+        ul.social-list.list-inline.py-2.mx-auto
+            li.list-inline-item
+                a(href="https://www.linkedin.com/in/rodrigo-mady/" target="_blank")
+                    i.fa.fa-linkedin-square.fa-2x                                    
+            li.list-inline-item
+                a(href="https://www.facebook.com/rodrigo.mady" target="_blank")                                    
+                    i.fa.fa-facebook-square.fa-2x     
+            li.list-inline-item
+                a(href="https://github.com/rmady" target="_blank")                                    
+                    i.fa.fa-github-square.fa-2x   
+            li.list-inline-item
+                a(href="mailto:rodrigo.mady@gmail.com" target="_blank")                                    
+                    i.fa.fa-google.fa-2x
+            li.list-inline-item
+                a(href="https://www.instagram.com/rmady__" target="_blank")                                    
+                    i.fa.fa-instagram.fa-2x
+        div.text-center.mt-3        
+            form(action="https://www.paypal.com/donate" method="post" target="_top")
+                input(type="hidden" name="hosted_button_id" value="6FBZMX8PFPS3Y")
+                input.btn(type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="Donate with PayPal for theme Trema" alt="Donate with PayPal button for Theme Trema")
+
+        div.text-center.my-3 
+            span.copyleft ©
+            span.ml-1 RMady    
+            
     div.space.stars1
     div.space.stars2

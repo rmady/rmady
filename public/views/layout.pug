@@ -3,14 +3,14 @@ doctype html
 html
   head
     meta(charset="utf-8")
-    link(rel="stylesheet", href="/css/bootstrap.min.css", type="text/css")
-    link(rel="stylesheet", href="/css/bootstrap-theme.min.css", type="text/css")
-    link(rel="stylesheet", href="/css/font-awesome.min.css", type="text/css")
-    link(rel="stylesheet", href="/css/fonts.css", type="text/css")
+    link(rel="stylesheet", href="/css/libs/bootstrap.min.css", type="text/css")
+    link(rel="stylesheet", href="/css/libs/bootstrap-theme.min.css", type="text/css")
+    link(rel="stylesheet", href="/css/libs/font-awesome.min.css", type="text/css")
+    link(rel="stylesheet", href="/css/libs/fonts.css", type="text/css")
+    link(rel="stylesheet", href="/css/slideshow.css", type="text/css")
     link(rel="stylesheet", href="/css/main.css", type="text/css")
     link(rel="stylesheet", href="/css/header.css", type="text/css")
     link(rel="stylesheet", href="/css/footer.css", type="text/css")
-    link(rel="stylesheet", href="/css/slideshow.css", type="text/css")
     link(rel="stylesheet", href="/css/purplemode.css", type="text/css")
     link(rel="icon", href="/images/favicon.png", sizes="192x192")    
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
@@ -20,5 +20,6 @@ html
     title #{title} | RMady
   body
   include header.pug
-  div#root.min-vh-100
+  div#root
     block layout-content
+  include footer.pug

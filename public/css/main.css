@@ -6,6 +6,7 @@ body {
 :root {
     --purple: #663399;
     --eletricpurple: #8c14fc;
+    --lightpurple:#e3c4ff;
     --darkpurple: #130028;
     --varyDarkBlue: hsl(234, 12%, 34%);
     --grayishBlue: hsl(229, 6%, 66%);
@@ -13,6 +14,10 @@ body {
     --weight1: 200;
     --weight2: 400;
     --weight3: 600;
+}
+
+#root {
+    min-height: calc(100vh - 300px);
 }
 
 .btn-secondary {

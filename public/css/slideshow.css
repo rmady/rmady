@@ -192,7 +192,8 @@
   z-index: 2;
   transition: width 0.2s ease;
 }
-.slideshow .pagination .item:hover::before, .slideshow .pagination .item.is-active::before {
+.slideshow .pagination .item:hover::before, 
+.slideshow .pagination .item.is-active::before {
   background-color: #fff;
 }
 .slideshow .arrows .arrow {
