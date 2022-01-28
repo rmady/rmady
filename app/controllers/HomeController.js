@@ -180,11 +180,12 @@
             purplemode: req.t('purplemode'),
             roledescription: req.t('roledescription'),
             skills: req.t('skills'),
-            skillsdescription: req.t('skillsdescription'),
-            
+            skillsdescription: req.t('skillsdescription'),            
             tremadesc: req.t('tremadesc'),
             footertitle: req.t('footertitle'),
             footerdesc: req.t('footerdesc'),
+            english: req.t('english'),
+            portuguese: req.t('portuguese'),
         };
     }
 
