@@ -11,6 +11,7 @@ const
     path       = require('path'),
     routes     = require(path.join(__dirname, "/app/routes")),
     i18next    = require('i18next');
+    config    = require(path.join(__dirname, "/config"));
     Backend    = require('i18next-fs-backend');
     middleware = require('i18next-http-middleware');
 
@@ -21,10 +22,11 @@ i18next
   .use(Backend)
   .use(middleware.LanguageDetector)
   .init({
-   fallbackLng: ['pt', 'en'],
-   backend: {
-     loadPath: './locales/{{lng}}.json'
-   }
+    detection: config,
+    fallbackLng: ['en', 'pt'],
+    backend: {
+      loadPath: './locales/{{lng}}.json'
+    }
 });
 
 app.set("views", path.join(__dirname, "public/views"));

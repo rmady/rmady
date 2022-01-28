@@ -1,12 +1,27 @@
 window.onload = function() {
-    const purplemode = document.getElementById('purplemode');
-    purplemode.onclick = function() {
-        const body = document.querySelector("body");
+    //console.log('dsaf');
+    // ******************* Loading mode ******************** //
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("root").style.display   = "block";
+    document.getElementById("header").style.display = "block";
+    document.getElementById("footer").style.display = "block";
+    // ******************* Purple mode ******************** //
+    const purplemode   = document.getElementById('purplemode');
+    const lspurplemode = localStorage.getItem('purplemode');
+    const body         = document.querySelector("body");
+    if (lspurplemode == 'true') {        
         body.classList.toggle("purple-mode");
+        document.getElementById("purplemode").checked = true;
+    }    
+    purplemode.onclick = function() {
+        body.classList.toggle("purple-mode");        
+        document.body.classList.contains('purple-mode') ? 
+            localStorage.setItem('purplemode', true) :
+            localStorage.setItem('purplemode', false);    
     }
 
     // ******************* Slideshow ******************** //
-    var slideshowDuration = 4000;
+    var slideshowDuration = 2000;
     var slideshow=$('.main-content .slideshow');
 
     function slideshowSwitch(slideshow,index,auto){
@@ -216,5 +231,4 @@ window.onload = function() {
     if($('.main-content .slideshow').length > 1) {
         $(window).on('scroll',homeSlideshowParallax);
     }
-
 }
