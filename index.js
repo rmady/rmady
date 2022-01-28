@@ -5,25 +5,26 @@
  * @project rmady.com
  */
 
+const langoptions = require('./langoptions');
+
 const 
     express    = require('express'),
     bodyParser = require('body-parser'), 
     path       = require('path'),
     routes     = require(path.join(__dirname, "/app/routes")),
-    i18next    = require('i18next');
-    config    = require(path.join(__dirname, "/config"));
-    Backend    = require('i18next-fs-backend');
+    i18next    = require('i18next'),
+    Backend    = require('i18next-fs-backend'),
     middleware = require('i18next-http-middleware');
 
 const port = 3000;
 const app  = express();
-
 i18next
   .use(Backend)
   .use(middleware.LanguageDetector)
   .init({
-    detection: config,
-    fallbackLng: ['en', 'pt'],
+    detection: langoptions,
+    preload: ['en', 'pt'],
+    fallbackLng: 'en',
     backend: {
       loadPath: './locales/{{lng}}.json'
     }

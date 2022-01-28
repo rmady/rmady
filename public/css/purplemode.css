@@ -12,6 +12,7 @@ body.purple-mode .purple-mode-toggle .toggle:checked+.toggle-btn:after {
 }
 
 body.purple-mode .theme-bg-light,
+body.purple-mode,
 body.purple-mode #root {
     background: var(--darkpurple) !important;
     color: white;

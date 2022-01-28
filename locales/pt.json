@@ -22,6 +22,8 @@
 	"ownbussinesslink": "Maravilha, eu quero saber mais sobre a Trema Tech",
 	"cite": "Cada sonho que você deixa pra trás, é um pedaço do futuro que deixa de existir",
 	"talks": "Palestras",
+	"talk1": "Como o tema pode resolver seus problemas",
+	"talk2": "Temas Moodle - Como provê mais liberdade para o usuário final",
 	"talksdesc": "Eu amo a Comunidade Open Source e comecei a compartilhar minha experiência com algumas palestras. Como usuário Linux e mantenedor do tema Trema, esta é uma ótima forma de expandir meu conhecimento e aprender mais.",
 	"phpdesc": "O Moodle é minha principal habilidade, tenho mais de 7 anos de experiência trabalhando com ele e fazendo algumas palestras. Eu tive uma pequena experiência trabalhando com Laravel também.",
 	"javascriptdesc": "6 anos de experiência trabalhando com Vanilla e bibliotecas. Trabalhei um pouco com Vue.Js e React. E fiz o Bootcamp no BairesDev com Node JS.",
@@ -30,6 +32,11 @@
 	"trema": "Tema Trema",
 	"tremadesc": "Trema tem foco em usabilidade e beleza, os desenvolvedores tentaram fazer algo limpo e utilizável para todos na comunidade.",
 	"footertitle": "Interessado em me contratar para o seu projeto?",
-	"footerdesc": "Procurando um desenvolvedor full-stack experiente para criar sua aplicação de ensino a distância em Moodle? Para iniciar um bate-papo inicial, basta me enviar uma mensagem:"
+	"footerdesc": "Procurando um desenvolvedor full-stack experiente para criar sua aplicação de ensino a distância em Moodle? Para iniciar um bate-papo inicial, basta me enviar uma mensagem:", 
+	"tremasites": "Em mais de 3800 sites",
+	"tremadownloads": "Mais de 20.000 downloads desde 2019",
+	"tremalikes": "80 curtidas no Moodle.org",
+	"sourcecode": "Código Fonte",
+	"donate": "Doação"
 
 }

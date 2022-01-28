@@ -51,6 +51,8 @@
             ownbussinesslink: req.t('ownbussinesslink'),
             cite: req.t('cite'),
             talks: req.t('talks'),
+            talk1: req.t('talk1'),
+            talk2: req.t('talk2'),
             talksdesc: req.t('talksdesc'),
             phpdesc: req.t('phpdesc'),
             javascriptdesc: req.t('javascriptdesc'),
@@ -60,6 +62,11 @@
             tremadesc: req.t('tremadesc'),
             footertitle: req.t('footertitle'),
             footerdesc: req.t('footerdesc'),
+            tremasites: req.t('tremasites'),
+            tremadownloads: req.t('tremadownloads'),
+            tremalikes: req.t('tremalikes'),
+            sourcecode: req.t('sourcecode'),
+            donate: req.t('donate'),
         };
     }
 
@@ -198,6 +205,7 @@
      */
     getContactStrings = (req) => {
         return {
+            active:       'contact', 
             title:        req.t('contact'),
             bio:          req.t('bio'),   
             welcome:      req.t('welcome'),
@@ -223,21 +231,9 @@
      * @param {*} res 
      * @param {*} req 
      */
-     renderPage = async (res, req, page, strFunction) => {
-        const i18next = require('i18next');
-        const lang    = req.query.lang;
-        let strings   = {};
-        try {
-            if (lang) {
-                i18next
-                .changeLanguage(lang)
-                .then( t => {
-                    req.t   = t;
-                    res.render(page, strFunction(req));
-                });
-            } else {            
-                res.render(page, strFunction(req));
-            }
+     renderPage = async (res, req, page, strFunction) => {          
+        try {    
+            res.render(page, strFunction(req));
         } catch (e) {
             console.log(e);
             res.status(500).send(e.message);
