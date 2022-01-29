@@ -65,3 +65,10 @@
         transform: rotate(360deg);
     }
 }
+
+@media (max-width: 990px) {
+    #footer {
+        margin-top: 3rem;
+        margin-left: 0;
+    }
+}

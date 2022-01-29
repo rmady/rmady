@@ -33,3 +33,13 @@ body {
     margin-left: 280px;
 }
 
+@media (max-width: 990px) {
+    #root {
+        top: 60px;
+        position: relative;
+    }
+
+    .view {
+        margin-left: 0;
+    }
+}

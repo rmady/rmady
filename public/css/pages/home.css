@@ -272,8 +272,7 @@ section.section-proof .box h5 {
 
 @media (max-width: 950px) and (min-width: 450px) {
     section.section-proof .box {
-        text-align: center;
-        height: 180px;
+        min-height: 220px;
     }
 }
 
@@ -299,22 +298,27 @@ section.section-proof h2 {
 @media (min-width: 950px) {
     section.section-proof .row1-container {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
     }
     
     section.section-proof .row2-container {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: center;    
+        align-items: flex-start;
     }
+
     section.section-proof .box-down {
         position: relative;
-        top: 150px;
-    }
+        top: 0;
+    }    
+
     section.section-proof .box {
         width: 100%;
-        max-width: 350px;     
+        max-width: 600px;
+        min-height: 215px;
+        margin: 5px;
+        margin-top: 10px;
     }    
 }
 
@@ -465,4 +469,24 @@ section.section-proof h2 {
 
 .waveAnimation .waveBottom {
     animation: move_wave 40s linear infinite;
+}
+
+@media (max-width: 990px) {
+    .skills-block {
+        margin: 5px;
+        margin-top: 40px;
+    }
+
+    .btns-profile {
+        text-align: center;
+    }
+
+    .talks-block {
+        margin: 0 auto;
+        max-width: 550px;
+    }
+
+    .iframe-video iframe {
+        max-width: 300px;
+    }
 }

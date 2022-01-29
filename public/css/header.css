@@ -85,6 +85,20 @@ header .profile-image {
     animation: gradient 5s ease infinite;
 }
 
+@media (max-width: 990px) {
+    .header {
+        height: 60px;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .header .blog-name {
+        float: right;
+        margin-top: 0.75rem;
+        margin-right: 1rem;
+    }
+}
+
 @-webkit-keyframes gradient {
 	0% {
 		background-position: 0% 50%;
