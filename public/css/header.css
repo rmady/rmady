@@ -9,6 +9,25 @@
     overflow-y: auto;
     scrollbar-color: rgba(0,0,0,0.2) var(--bs-orange);
     scrollbar-width: thin;
+    background: linear-gradient(-45deg, var(--bs-orange), #f9690e, #f2784b, #e73c7e);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 5s ease infinite;
+    animation: gradient 5s ease infinite;
+    transition: all ease 300ms;
+}
+
+#header.show {
+    height: 100%;
+}
+
+#header.show .blog-name {
+    float: none;
+    position: absolute;
+    left: 100px;
+}
+
+#header.show #navigation .navbar-nav {
+    padding: 0 1rem;
 }
 
 .header::-webkit-scrollbar {
@@ -75,14 +94,6 @@ header .profile-image {
     left: 50%;
     background: rgba(255,255,255,0.9);
     background: var(--purple);
-}
-
-
-.header {
-	background: linear-gradient(-45deg, var(--bs-orange), #f9690e, #f2784b, #e73c7e);
-	background-size: 400% 400%;
-	-webkit-animation: gradient 5s ease infinite;
-    animation: gradient 5s ease infinite;
 }
 
 @media (max-width: 990px) {

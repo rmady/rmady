@@ -1,5 +1,4 @@
 window.onload = function() {
-    //console.log('dsaf');
     // ******************* Loading mode ******************** //
     document.getElementById("loader").style.display = "none";
     document.getElementById("root").style.display   = "block";
@@ -18,6 +17,15 @@ window.onload = function() {
         document.body.classList.contains('purple-mode') ? 
             localStorage.setItem('purplemode', true) :
             localStorage.setItem('purplemode', false);    
+    }
+
+    // *******************  Navbar ******************* //
+    const navbartoggler = document.getElementById('navbar-toggler');
+    const header        = document.getElementById('header');
+    const navigation    = document.getElementById('navigation');
+    navbartoggler.onclick = function() {
+        header.classList.toggle("show"); 
+        navigation.classList.toggle("show");  
     }
 
     // ******************* Slideshow ******************** //
