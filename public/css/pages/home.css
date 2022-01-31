@@ -249,6 +249,7 @@ section.section-proof .attribution a {
 section.section-proof .box {
     border-radius: 5px;
     background: rgb(255,255,255);
+    min-height: auto;
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,249,243,1) 35%, rgba(255,255,255,1) 100%);
     box-shadow: 0px 30px 40px -20px var(--grayishBlue);
     padding: 30px;
@@ -296,30 +297,39 @@ section.section-proof h2 {
 
 
 @media (min-width: 950px) {
-    section.section-proof .row1-container {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-    }
-    
+    section.section-proof .row1-container,
     section.section-proof .row2-container {
         display: flex;
-        justify-content: center;    
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
     }
 
     section.section-proof .box-down {
         position: relative;
-        top: 0;
+        top: 150px;
     }    
 
     section.section-proof .box {
         width: 100%;
-        max-width: 600px;
-        min-height: 215px;
+        max-width: 230px;
         margin: 5px;
         margin-top: 10px;
     }    
+}
+
+@media (min-width: 1450px) {
+    section.section-proof .box {
+        max-width: 350px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 1450px) {
+    .talks-block {
+        flex: 0 0 auto;
+        width: 100%;
+        margin-top: 2rem;
+    }
 }
 
 /** Talks */
@@ -334,7 +344,7 @@ section.section-proof h2 {
 }
 
 .talks-block {
-    max-width: 630px;
+    max-width: 500px;
     padding: 0.5rem;
     padding-bottom: 0;
     box-shadow: 0px 30px 40px -20px var(--grayishBlue);
@@ -477,6 +487,24 @@ section.section-proof h2 {
         margin-top: 40px;
     }
 
+    section.section-proof .row1-container,
+    section.section-proof .row2-container {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        display: flex;
+    }
+
+    section.section-proof .box {
+        max-width: 400px;
+        min-height: 250px;
+    }
+
+    section.section-proof .box-down {
+        position: relative;
+        top: 0;
+    }   
+
     .btns-profile {
         text-align: center;
     }
@@ -488,5 +516,14 @@ section.section-proof h2 {
 
     .iframe-video iframe {
         max-width: 300px;
+        overflow: hidden;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .iframe-video iframe {
+        max-width: 200px;
+        overflow: hidden;
     }
 }

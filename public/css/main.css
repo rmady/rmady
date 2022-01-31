@@ -42,4 +42,9 @@ body {
     .view {
         margin-left: 0;
     }
+
+    .btn-outline-primary {
+        max-width: 250px;
+        white-space: normal;
+    }
 }
