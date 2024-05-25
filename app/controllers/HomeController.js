@@ -53,6 +53,8 @@
             talks: req.t('talks'),
             talk1: req.t('talk1'),
             talk2: req.t('talk2'),
+            talk3: req.t('talk3'),
+            talk4: req.t('talk4'),
             talksdesc: req.t('talksdesc'),
             phpdesc: req.t('phpdesc'),
             javascriptdesc: req.t('javascriptdesc'),

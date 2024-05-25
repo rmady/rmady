@@ -1,4 +1,5 @@
 header#header.header.text-center
+    div#bg-header
     div.force-overflow
         h2.blog-name.pt-lg-4.mb-0
             a.no-text-decoration.text-light(href="/") Rodrigo Mady
@@ -42,22 +43,22 @@ header#header.header.text-center
                         a.nav-link(href="/")
                             i.fa.fa-user.text-light
                             span.ml-2 #{aboutme}  
-                    li.nav-item(class = active === "portfolio" ? "active" : "")
-                        a.nav-link(href="/portfolio")
-                            i.fa.fa-code.text-light
-                            span.ml-2 #{portfolio}
-                    li.nav-item(class = active === "services" ? "active" : "")
-                        a.nav-link(href="/services")
-                            i.fa.fa-briefcase.text-light
-                            span.ml-2 #{services}  
+                    //- li.nav-item(class = active === "portfolio" ? "active" : "")
+                    //-     a.nav-link(href="/portfolio")
+                    //-         i.fa.fa-code.text-light
+                    //-         span.ml-2 #{portfolio}
+                    //- li.nav-item(class = active === "services" ? "active" : "")
+                    //-     a.nav-link(href="/services")
+                    //-         i.fa.fa-briefcase.text-light
+                    //-         span.ml-2 #{services}  
                     li.nav-item(class = active === "cv" ? "active" : "")
                         a.nav-link(href="/cv") 
                             i.fa.fa-file-code-o.text-light
                             span.ml-2 #{resume}  
-                    li.nav-item(class = active === "contact" ? "active" : "")
-                        a.nav-link(href="/contact") 
-                            i.fa.fa-envelope-o.text-light
-                            span.ml-2 #{contact} 
+                    //- li.nav-item(class = active === "contact" ? "active" : "")
+                    //-     a.nav-link(href="/contact") 
+                    //-         i.fa.fa-envelope-o.text-light
+                    //-         span.ml-2 #{contact} 
                     li.nav-item
                         a.nav-link(href="https://github.com/trema-tech/moodle-theme_trema" target="_blank") 
                             i.fa.fa-github.text-light

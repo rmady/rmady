@@ -25,6 +25,11 @@ body {
     border-color: var(--eletricpurple);
 }
 
+.btn-secondary:hover {
+    background-color: var(--eletricpurple);
+    border-color: var(--purple);
+}
+
 .no-text-decoration {
     text-decoration: none;
 }
