@@ -1,18 +1,24 @@
-section.about-me-section.p-3.p-lg-5.theme-bg-light
+section.about-me-section.theme-bg-light
+    div.bg-header
     div.container
-        div.profile-teaser.row
-            div.col
-                h1.name.font-weight-bold.mb-1 Rodrigo Mady
-                div.tagline.mb-3 #{mainrole}
-                div.bio.mb-4 #{roledescription}
-                div.mb-4.btns-profile
-                    a.btn.btn-primary.me-2.mb-3(href="https://trema.rmady.com.br/" target="_blank")
-                        i.fa.fa-code.text-light
-                        span.ml-2 #{trema}
-                    a.btn.btn-secondary.mb-3(href="/cv")
-                        i.fa.fa-file-code-o.text-light
-                        span.ml-2 #{resume}                                         
-                    a.btn.btn-warning.ml-2.mb-3(href="https://www.paypal.com/donate/?hosted_button_id=6FBZMX8PFPS3Y&source=qr" target="_blank") #{donate}
-                        i.fa.fa-paypal.ml-2
-            div.col-md-5.col-lg-5.text-center
-                img.profile-image.img-fluid.mb-3.mb-lg-0.me-md-0(src="/images/profile4.jpg")
+        div.flex-container.d-flex.flex-column
+            div.profile-teaser.row
+                div.col
+                    h1.name.font-weight-bold.mb-1 Rodrigo Mady
+                    div.tagline.mb-3 #{mainrole}
+                    div.bio.mb-4 #{roledescription}
+                    div.mb-4.btns-profile
+                        a.btn.btn-primary.me-2.mb-3(href="https://trema.rmady.com.br/" target="_blank")
+                            i.fa.fa-code.text-light
+                            span.ml-2 #{trema}
+                        a.btn.btn-secondary.mb-3(href="/cv")
+                            i.fa.fa-file-code-o.text-light
+                            span.ml-2 #{resume}                                         
+                        a.btn.btn-warning.ml-2.mb-3(href="https://www.paypal.com/donate/?hosted_button_id=6FBZMX8PFPS3Y&source=qr" target="_blank") #{donate}
+                            i.fa.fa-paypal.ml-2
+                div.col-md-5.col-lg-5.text-center
+                    img.profile-image.img-fluid.mb-3.mb-lg-0.me-md-0(src="/images/profile4.jpg")
+    div.navigation
+        ul.nav.nav-pills.justify-content-end
+            li.nav-item
+                a.nav-link(href="/skills" data-bs-toggle="pill") #{skills}        

@@ -18,6 +18,23 @@ h1.name {
 }
 
 /** About me section */
+.about-me-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.bg-header {
+    background-image: url(/images/bg.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: -webkit-fill-available;
+    opacity: .025;
+    position: absolute;
+    overflow: hidden;
+    left: 280px;
+}
+
 .about-me-section .profile-image {
     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 54% 100%, 0% 100%, 6% 78%, 0% 43%, 17% 12%);
     width: 100%;
@@ -46,6 +63,10 @@ h3.section-title {
 }
 
 /** Skills Section */
+
+.skills-section {
+    min-height: 100vh;
+}
 
 .skills-icon-holder {
     width: 80px;
@@ -238,6 +259,9 @@ svg:not(:root).svg-inline--fa {
 
 
 /** Cards */
+section.section-proof {
+    min-height: 100vh;
+}
 section.section-proof .attribution { 
     font-size: 11px; text-align: center; 
 }
@@ -333,6 +357,10 @@ section.section-proof h2 {
 }
 
 /** Talks */
+.talks-section {
+    min-height: calc(100vh - 210px);
+}
+
 .talks-icon-holder {
     background: var(--bs-orange);
     width: 80px;
@@ -376,14 +404,14 @@ section.section-proof h2 {
 }
 
 #cite {
-    min-height: 275px;
+    min-height: 210px;
     height: 100%;
 }
 
 #cite .inner{
     z-index: 100;
     position: relative;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 #cite blockquote {
@@ -526,4 +554,9 @@ section.section-proof h2 {
         max-width: 200px;
         overflow: hidden;
     }
+}
+
+/* Trema */
+.trema-section {
+    min-height: 100vh;
 }

@@ -27,6 +27,13 @@ window.onload = function() {
         header.classList.toggle("show"); 
         navigation.classList.toggle("show");  
     }
+    window.onscroll = function() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.body.classList.add("scrolled");
+        } else {
+            document.body.classList.remove("scrolled");
+        }
+    };
 
     // ******************* Slideshow ******************** //
     var slideshowDuration = 2000;

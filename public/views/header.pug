@@ -42,27 +42,31 @@ header#header.header.text-center
                     li.nav-item(class = active === "home" ? "active" : "")
                         a.nav-link(href="/")
                             i.fa.fa-user.text-light
-                            span.ml-2 #{aboutme}  
-                    //- li.nav-item(class = active === "portfolio" ? "active" : "")
-                    //-     a.nav-link(href="/portfolio")
-                    //-         i.fa.fa-code.text-light
-                    //-         span.ml-2 #{portfolio}
-                    //- li.nav-item(class = active === "services" ? "active" : "")
-                    //-     a.nav-link(href="/services")
-                    //-         i.fa.fa-briefcase.text-light
-                    //-         span.ml-2 #{services}  
-                    li.nav-item(class = active === "cv" ? "active" : "")
-                        a.nav-link(href="/cv") 
+                            span.ml-2 #{aboutme} 
+                    li.nav-item(class = active === "skills" ? "active" : "")
+                        a.nav-link(href="/skills")
                             i.fa.fa-file-code-o.text-light
-                            span.ml-2 #{resume}  
-                    //- li.nav-item(class = active === "contact" ? "active" : "")
-                    //-     a.nav-link(href="/contact") 
-                    //-         i.fa.fa-envelope-o.text-light
-                    //-         span.ml-2 #{contact} 
+                            span.ml-2 #{skills} 
+                    li.nav-item(class = active === "clients" ? "active" : "")
+                        a.nav-link(href="/jobs")
+                            i.fa.fa-map-marker.text-light
+                            span.ml-2 #{jobs} 
+                    li.nav-item(class = active === "portfolio" ? "active" : "")
+                        a.nav-link(href="/portfolio")
+                            i.fa.fa-graduation-cap.text-light
+                            span.ml-2 #{portfolio}
+                    li.nav-item(class = active === "talks" ? "active" : "")
+                        a.nav-link(href="/talks")
+                            i.fa.fa-volume-up.text-light
+                            span.ml-2 #{talks}  
+                    li.nav-item(class = active === "trema" ? "active" : "")
+                        a.nav-link(href="/trema") 
+                            i.fa.fa-code.text-light
+                            span.ml-2 #{trema}
                     li.nav-item
                         a.nav-link(href="https://github.com/trema-tech/moodle-theme_trema" target="_blank") 
                             i.fa.fa-github.text-light
-                            span.ml-2 #{themetrema}
+                            span.ml-2 GitHub Trema
                 div.purple-mode-toggle.text-center.w-100
                     hr.mb-4
                     ul.navbar-nav.flex-column.text-center

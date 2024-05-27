@@ -12,6 +12,10 @@ const path    = require('path');
 const HomeController = require(path.join(__dirname, "/controllers/HomeController"));
 
 router.get('/', HomeController.renderHome);
+router.get('/skills', HomeController.renderSkills);
+router.get('/jobs', HomeController.renderJobs);
+router.get('/talks', HomeController.renderTalks);
+router.get('/trema', HomeController.renderTrema);
 router.get('/portfolio', HomeController.renderPortfolio);
 router.get('/services', HomeController.renderServices);
 router.get('/cv', HomeController.renderCV);
