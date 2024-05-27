@@ -1,0 +1,94 @@
+section.skills-section.section.py-5.p-3.p-lg-5
+    div.container
+        h3.section-title.font-weight-bold.mb-3 #{skills}
+        div.section-intro.mx-auto.mb-3 #{skillsdescription}
+        div.skills-blocks.mx-auto.mt-4
+            div.row.justify-content-evenly
+                div.skills-block.col-12.col-lg-4
+                    div.box
+                        div.content
+                            div.skills-block-inner.px-2.position-relative
+                                h4.skills-cat.text-center.mb-3.mt-3 Backend                         
+                                ul.skills-list.list-unstyled
+                                    li.mb-2
+                                        i.fa.fa-check.me-2 
+                                        span Moodle                    
+                                    li.mb-2
+                                        i.fa.fa-check.me-2 
+                                        span PHP (CakePHP/Laravel)
+                                    li.mb-2
+                                        i.fa.fa-check.me-2 
+                                        span Node.js (Express/NestJS)                               
+                                    li.mb-2
+                                        i.fa.fa-check.me-2 
+                                        span Web services RESTful
+                                    li.mb-2
+                                        i.fa.fa-check.me-2 
+                                        span PostgreSQL & MySQL
+                                
+                            div.skills-icon-holder.position-absolute.d-inline-block.rounded-circle.text-center
+                                img.skills-icon(src="/images/backend-icon.svg")   
+                
+                div.skills-block.col-12.col-lg-4
+                    div.box
+                        div.content
+                            div.skills-block-inner.px-2.position-relative
+                                h4.skills-cat.text-center.mb-3.mt-3 Frontend
+                                ul.skills-list.list-unstyled
+                                    li.mb-2
+                                        i.fa.fa-check.me-2
+                                        span React (Next.js)	
+                                    li.mb-2
+                                        i.fa.fa-check.me-2 
+                                        span JavaScript, jQuery & Ajax
+                                    li.mb-2
+                                        i.fa.fa-check.me-2 
+                                        span HTML5, CSS & SASS (SCSS)		
+                                    li.mb-2
+                                        i.fa.fa-check.me-2
+                                        span Vue.js			        
+                                    li.mb-2
+                                        i.fa.fa-check.me-2 
+                                        span Grunt                          
+                            div.skills-icon-holder.position-absolute.d-inline-block.rounded-circle.text-center
+                                img.skills-icon(src="/images/frontend-icon.svg")
+                
+                div.skills-block.col-12.col-lg-4
+                    div.box
+                        div.content
+                            div.skills-block-inner.px-2.position-relative
+                                h4.skills-cat.text-center.mb-3.mt-3 #{others}                                
+                                ul.skills-list.list-unstyled
+                                    li.mb-2
+                                        i.fa.fa-check.me-2
+                                        span Unit Testing
+                                    li.mb-2
+                                        i.fa.fa-check.me-2
+                                        span Behat
+                                    li.mb-2
+                                        i.fa.fa-check.me-2
+                                        span Azure Functions
+                                    li.mb-2
+                                        i.fa.fa-check.me-2
+                                        span Gannt, Astah, Pencil & Bizagi
+                                    li.mb-2
+                                        i.fa.fa-check.me-2 
+                                        span Vagrant
+                                    li.mb-2
+                                        i.fa.fa-check.me-2 
+                                        span Jenkins, Gitlab & Github
+                            div.skills-icon-holder.position-absolute.d-inline-block.rounded-circle.text-center
+                                    img.skills-icon(src="/images/other-skills-icon.svg")
+    div.container.px-5.mt-5
+            div.d-flex.align-items-start.text-left.my-3 
+                span.copyleft ©
+                h4.ml-1 RMady  
+                img.ml-1(src="/images/favicon.png" width="32")
+            div.section-intro.my-3 #{ownbussiness}
+            a.btn.btn-outline-primary.mt-3.text-center(href="https://trema.rmady.com.br/" target="_blank") #{ownbussinesslink}
+    div.navigation
+        ul.nav.nav-pills.justify-content-between
+            li.nav-item
+                a.nav-link(href="/" data-bs-toggle="pill") #{aboutme} 
+            li.nav-item
+                a.nav-link(href="/jobs" data-bs-toggle="pill") #{jobs} 
