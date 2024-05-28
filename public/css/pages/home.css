@@ -286,7 +286,8 @@ section.section-proof .attribution a {
     color: hsl(228, 45%, 44%); 
 }
 
-section.section-proof .box {
+section.section-proof .box,
+section.portfolio-section .box {
     border-radius: 5px;
     background: rgb(255,255,255);
     min-height: auto;
@@ -312,7 +313,8 @@ section.section-proof .box h5 {
 }
 
 @media (max-width: 950px) and (min-width: 450px) {
-    section.section-proof .box {
+    section.section-proof .box,
+    section.portfolio-section .box {
         min-height: 220px;
     }
 }
@@ -335,21 +337,51 @@ section.section-proof h2 {
     font-weight: var(--weight3);
 }
 
+.item-icon {
+    text-align: right;
+}
+
+/* Portfolio cards */
+
+.moodle-box {
+    border-left: 3px solid var(--bs-orange);
+}
+
+.icmbio-box {
+    border-left: 3px solid var(--bs-green);
+}
+
+.unasus-box {
+    border-top: 3px solid var(--bs-cyan);
+}
+
+.bairesdev-box {
+    border-right: 3px solid var(--bs-blue);
+}
+
+.uruca-box {
+    border-right: 3px solid var(--bs-orange);
+}
+
+.stf-box {
+    border-bottom: 3px solid #336791;
+}
 
 @media (min-width: 950px) {
-    section.section-proof .row1-container,
-    section.section-proof .row2-container {
+    .row-container {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    section.section-proof .box-down {
+    section.section-proof .box-down,
+    section.portfolio-section .box-down {
         position: relative;
         top: 150px;
     }    
 
-    section.section-proof .box {
+    section.section-proof .box,
+    section.portfolio-section .box {
         width: 100%;
         max-width: 230px;
         margin: 5px;
@@ -360,6 +392,11 @@ section.section-proof h2 {
 @media (min-width: 1450px) {
     section.section-proof .box {
         max-width: 350px;
+        margin: 10px;
+    }
+
+    section.portfolio-section .box {
+        max-width: 420px;
         margin: 10px;
     }
 }
@@ -531,12 +568,42 @@ section.section-proof h2 {
         margin-top: 40px;
     }
 
-    section.section-proof .row1-container,
-    section.section-proof .row2-container {
+    .row-container {
         justify-content: space-evenly;
         flex-wrap: wrap;
         align-items: center;
         display: flex;
+    }
+
+    section.portfolio-section .box {
+        border-top: none;
+        border-bottom: none;
+        border-right: none;
+        border-left: 3px solid var(--bs-orange);
+    }
+
+    section.portfolio-section .box.moodle-box {
+        border-left: 3px solid var(--bs-orange);
+    }
+    
+    section.portfolio-section .box.icmbio-box {
+        border-left: 3px solid var(--bs-green);
+    }
+    
+    section.portfolio-section .box.unasus-box {
+        border-left: 3px solid var(--bs-cyan);
+    }
+    
+    section.portfolio-section .box.bairesdev-box {
+        border-left: 3px solid var(--bs-blue);
+    }
+    
+    section.portfolio-section .box.uruca-box {
+        border-left: 3px solid var(--bs-orange);
+    }
+    
+    section.portfolio-section .box.stf-box {
+        border-left: 3px solid #336791;
     }
 
     section.section-proof .box {
