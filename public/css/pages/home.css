@@ -19,7 +19,8 @@ h1.name {
 
 /** About me section */
 .about-me-section {
-    height: 100vh;
+    min-height: 70vh;
+    padding: 5rem;
     display: flex;
     align-items: center;
 }
@@ -65,7 +66,7 @@ h3.section-title {
 /** Skills Section */
 
 .skills-section {
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 .skills-icon-holder {
@@ -259,9 +260,24 @@ svg:not(:root).svg-inline--fa {
 
 
 /** Cards */
-section.section-proof {
-    min-height: 100vh;
+.section-proof .uruca .logo-light {
+    display: block;
+    margin: 0 auto;
 }
+
+.section-proof .uruca .logo-purple {
+    display: none;
+    margin: 0 auto;
+}
+
+section.section-proof .whatidid{
+    position: absolute;
+    max-width: 575px;
+    padding-left: 10rem !important;
+}
+
+
+
 section.section-proof .attribution { 
     font-size: 11px; text-align: center; 
 }

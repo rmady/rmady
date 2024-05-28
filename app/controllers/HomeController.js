@@ -26,35 +26,11 @@
      * @param {*} req 
      */
     getHomeStrings = (req) => {
+        const strings = this.getStrings(req);
         return {
-            active:  'home', 
-            title:   req.t('home'),
-            bio:     req.t('bio'),   
-            welcome: req.t('welcome'),
-            sitelanguage: req.t('sitelanguage'),
-            aboutme:    req.t('aboutme'),
-            portfolio:  req.t('portfolio'),
-            services:   req.t('services'),
-            resume:     req.t('resume'),
-            contact:    req.t('contact'),
-            themetrema: req.t('themetrema'),
-            purplemode: req.t('purplemode'),
-            mainrole:   req.t('mainrole'),
-            others:     req.t('others'),
-            roledescription: req.t('roledescription'),
-            skills: req.t('skills'),
-            skillsdescription: req.t('skillsdescription'),
-            jobs: req.t('jobs'),
-            talks: req.t('talks'),
-            trema: req.t('trema'),
-            tremadesc: req.t('tremadesc'),
-            footertitle: req.t('footertitle'),
-            footerdesc: req.t('footerdesc'),
-            tremasites: req.t('tremasites'),
-            tremadownloads: req.t('tremadownloads'),
-            tremalikes: req.t('tremalikes'),
-            sourcecode: req.t('sourcecode'),
-            donate: req.t('donate'),
+            ...strings,
+            active: 'home', 
+            title:  req.t('home')
         };
     }
 
@@ -74,98 +50,36 @@
      * @param {*} req 
      */
     getSkillsStrings = (req) => {
+        const strings = this.getStrings(req);
         return {
-            active:  'skills', 
-            title:   req.t('skills'),
-            bio:     req.t('bio'),   
-            welcome: req.t('welcome'),
-            sitelanguage: req.t('sitelanguage'),
-            aboutme:    req.t('aboutme'),
-            portfolio:  req.t('portfolio'),
-            services:   req.t('services'),
-            resume:     req.t('resume'),
-            contact:    req.t('contact'),
-            themetrema: req.t('themetrema'),
-            purplemode: req.t('purplemode'),
-            mainrole:   req.t('mainrole'),
-            others:     req.t('others'),
-            roledescription: req.t('roledescription'),
-            skills: req.t('skills'),
-            skillsdescription: req.t('skillsdescription'),
-            jobs: req.t('jobs'),
-            talks: req.t('talks'),
-            whatidid: req.t('whatidid'),
-            whatididdesc: req.t('whatididdesc'),
-            ownbussiness: req.t('ownbussiness'),
-            ownbussinesslink: req.t('ownbussinesslink'),           
-            trema: req.t('trema'),
-            footertitle: req.t('footertitle'),
-            footerdesc: req.t('footerdesc'),
-            tremasites: req.t('tremasites'),
-            tremadownloads: req.t('tremadownloads'),
-            tremalikes: req.t('tremalikes'),
-            sourcecode: req.t('sourcecode'),
-            donate: req.t('donate'),
+            ...strings,
+            active: 'skills', 
+            title:  req.t('skills')
         };
     }
 
-     /**
-    * Render page Jobs.
-    * 
-    * @param {*} req 
-    * @param {*} res 
-    */
-    renderJobs = async (req, res) => {
-        this.renderPage(res, req, 'jobs/main', this.getJobsStrings);        
+    /** 
+     * Render page portfolio.
+     * 
+     * @param {*} req 
+     * @param {*} res 
+     */
+    renderPortfolio = async (req, res) => {        
+        this.renderPage(res, req, 'portfolio/main', this.getPortfolioStrings);  
     }
+
     /**
-     * Lang strings for page Jobs.
+     * Lang strings for page portfolio.
      * 
      * @param {*} res 
      * @param {*} req 
      */
-    getJobsStrings = (req) => {
+     getPortfolioStrings = (req) => {
+        const strings = this.getStrings(req);
         return {
-            active:  'clients', 
-            title:   req.t('jobs'),
-            bio:     req.t('bio'),   
-            welcome: req.t('welcome'),
-            sitelanguage: req.t('sitelanguage'),
-            aboutme:    req.t('aboutme'),
-            portfolio:  req.t('portfolio'),
-            services:   req.t('services'),
-            resume:     req.t('resume'),
-            contact:    req.t('contact'),
-            themetrema: req.t('themetrema'),
-            purplemode: req.t('purplemode'),
-            mainrole:   req.t('mainrole'),
-            others:     req.t('others'),            
-            jobs: req.t('jobs'),
-            skills: req.t('skills'),
-            whatidid: req.t('whatidid'),
-            whatididdesc: req.t('whatididdesc'),
-            ownbussiness: req.t('ownbussiness'),
-            ownbussinesslink: req.t('ownbussinesslink'),
-            cite: req.t('cite'),
-            talks: req.t('talks'),
-            talk1: req.t('talk1'),
-            talk2: req.t('talk2'),
-            talk3: req.t('talk3'),
-            talk4: req.t('talk4'),
-            talksdesc: req.t('talksdesc'),
-            phpdesc: req.t('phpdesc'),
-            javascriptdesc: req.t('javascriptdesc'),
-            htmldesc: req.t('htmldesc'),
-            sqldesc: req.t('sqldesc'),
-            trema: req.t('trema'),
-            tremadesc: req.t('tremadesc'),
-            footertitle: req.t('footertitle'),
-            footerdesc: req.t('footerdesc'),
-            tremasites: req.t('tremasites'),
-            tremadownloads: req.t('tremadownloads'),
-            tremalikes: req.t('tremalikes'),
-            sourcecode: req.t('sourcecode'),
-            donate: req.t('donate'),
+            ...strings,
+            active: 'portfolio', 
+            title:  req.t('portfolio')
         };
     }
 
@@ -178,6 +92,7 @@
     renderTalks = async (req, res) => {
         this.renderPage(res, req, 'talks/main', this.getTalksStrings);        
     }
+
     /**
      * Lang strings for page Talks.
      * 
@@ -185,53 +100,17 @@
      * @param {*} req 
      */
     getTalksStrings = (req) => {
+        const strings = this.getStrings(req);
         return {
-            active:  'talks', 
-            title:   req.t('talks'),
-            bio:     req.t('bio'),   
-            welcome: req.t('welcome'),
-            sitelanguage: req.t('sitelanguage'),
-            aboutme:    req.t('aboutme'),
-            portfolio:  req.t('portfolio'),
-            services:   req.t('services'),
-            resume:     req.t('resume'),
-            contact:    req.t('contact'),
-            themetrema: req.t('themetrema'),
-            purplemode: req.t('purplemode'),
-            mainrole:   req.t('mainrole'),
-            others:     req.t('others'),   
-            skills:   req.t('skills'),         
-            jobs: req.t('jobs'),
-            whatidid: req.t('whatidid'),
-            whatididdesc: req.t('whatididdesc'),
-            ownbussiness: req.t('ownbussiness'),
-            ownbussinesslink: req.t('ownbussinesslink'),
-            cite: req.t('cite'),
-            talks: req.t('talks'),
-            talk1: req.t('talk1'),
-            talk2: req.t('talk2'),
-            talk3: req.t('talk3'),
-            talk4: req.t('talk4'),
-            talksdesc: req.t('talksdesc'),
-            phpdesc: req.t('phpdesc'),
-            javascriptdesc: req.t('javascriptdesc'),
-            htmldesc: req.t('htmldesc'),
-            sqldesc: req.t('sqldesc'),
-            trema: req.t('trema'),
-            tremadesc: req.t('tremadesc'),
-            footertitle: req.t('footertitle'),
-            footerdesc: req.t('footerdesc'),
-            tremasites: req.t('tremasites'),
-            tremadownloads: req.t('tremadownloads'),
-            tremalikes: req.t('tremalikes'),
-            sourcecode: req.t('sourcecode'),
-            donate: req.t('donate'),
-        };
+            ...strings,
+            active: 'talks', 
+            title:  req.t('talks')
+        };        
     }
 
     
-     /**
-    * Render page Talks.
+    /**
+    * Render page Trema.
     * 
     * @param {*} req 
     * @param {*} res 
@@ -239,6 +118,7 @@
      renderTrema = async (req, res) => {
         this.renderPage(res, req, 'trema/main', this.getTremaStrings);        
     }
+
     /**
      * Lang strings for page Trema.
      * 
@@ -246,174 +126,16 @@
      * @param {*} req 
      */
     getTremaStrings = (req) => {
+        const strings = this.getStrings(req);
         return {
-            active:  'trema', 
-            title:   req.t('trema'),
-            bio:     req.t('bio'),   
-            welcome: req.t('welcome'),
-            sitelanguage: req.t('sitelanguage'),
-            aboutme:    req.t('aboutme'),
-            portfolio:  req.t('portfolio'),
-            services:   req.t('services'),
-            resume:     req.t('resume'),
-            contact:    req.t('contact'),
-            themetrema: req.t('themetrema'),
-            purplemode: req.t('purplemode'),
-            mainrole:   req.t('mainrole'),
-            others:     req.t('others'),   
-            skills:   req.t('skills'),         
-            jobs: req.t('jobs'),
-            whatidid: req.t('whatidid'),
-            whatididdesc: req.t('whatididdesc'),
-            ownbussiness: req.t('ownbussiness'),
-            ownbussinesslink: req.t('ownbussinesslink'),
-            cite: req.t('cite'),
-            talks: req.t('talks'),
-            talk1: req.t('talk1'),
-            talk2: req.t('talk2'),
-            talk3: req.t('talk3'),
-            talk4: req.t('talk4'),
-            talksdesc: req.t('talksdesc'),
-            phpdesc: req.t('phpdesc'),
-            javascriptdesc: req.t('javascriptdesc'),
-            htmldesc: req.t('htmldesc'),
-            sqldesc: req.t('sqldesc'),
-            trema: req.t('trema'),
-            tremadesc: req.t('tremadesc'),
-            footertitle: req.t('footertitle'),
-            footerdesc: req.t('footerdesc'),
-            tremasites: req.t('tremasites'),
-            tremadownloads: req.t('tremadownloads'),
-            tremalikes: req.t('tremalikes'),
-            sourcecode: req.t('sourcecode'),
-            donate: req.t('donate'),
-        };
-    }
-
-    /** 
-     * Render page portfolio.
-     * 
-     * @param {*} req 
-     * @param {*} res 
-     */
-     renderPortfolio = async (req, res) => {        
-        this.renderPage(res, req, 'portfolio/main', this.getPortfolioStrings);  
+            ...strings,
+            active: 'trema', 
+            title:  req.t('trema')
+        };  
     }
 
     /**
-     * Lang strings for page portfolio.
-     * 
-     * @param {*} res 
-     * @param {*} req 
-     */
-     getPortfolioStrings = (req) => {
-        return { 
-            active:       'portfolio', 
-            title:        req.t('portfolio'),
-            bio:          req.t('bio'),   
-            welcome:      req.t('welcome'),
-            sitelanguage: req.t('sitelanguage'),
-            aboutme:      req.t('aboutme'),
-            portfolio:    req.t('portfolio'),
-            services:     req.t('services'),
-            resume:       req.t('resume'),
-            contact:      req.t('contact'),      
-            jobs:         req.t('jobs'),
-            themetrema:   req.t('themetrema'),
-            purplemode:   req.t('purplemode'),
-            skills:       req.t('skills'),
-            talks:        req.t('talks'),
-            trema:        req.t('trema'),          
-            tremadesc:    req.t('tremadesc'),
-            footertitle:  req.t('footertitle'),
-            footerdesc:   req.t('footerdesc'),
-            roledescription:   req.t('roledescription'),
-            skillsdescription: req.t('skillsdescription'),  
-        };
-    }
-
-    /**
-     * Render page services.
-     * 
-     * @param {*} req 
-     * @param {*} res 
-     */
-     renderServices = async (req, res) => {
-        this.renderPage(res, req, 'services/main', this.getServicesStrings);
-    }
-
-    /**
-     * Lang strings for page services.
-     * 
-     * @param {*} res 
-     * @param {*} req 
-     */
-     getServicesStrings = (req) => {
-        return {             
-            active:  'services', 
-            title:   req.t('services'),
-            bio:     req.t('bio'),   
-            welcome: req.t('welcome'),
-            sitelanguage: req.t('sitelanguage'),
-            aboutme:    req.t('aboutme'),
-            portfolio:  req.t('portfolio'),
-            services:   req.t('services'),
-            resume:     req.t('resume'),
-            contact:    req.t('contact'),
-            themetrema: req.t('themetrema'),
-            purplemode: req.t('purplemode'),
-            roledescription: req.t('roledescription'),
-            skills: req.t('skills'),
-            skillsdescription: req.t('skillsdescription'),            
-            tremadesc: req.t('tremadesc'),
-            footertitle: req.t('footertitle'),
-            footerdesc: req.t('footerdesc'),
-        };
-    }
-
-    /**
-     * Render page CV.
-     * 
-     * @param {*} req 
-     * @param {*} res 
-     */
-     renderCV = async (req, res) => {
-        this.renderPage(res, req, 'cv/main', this.getCVStrings);
-    }
-
-    /**
-     * Lang strings for page CV.
-     * 
-     * @param {*} res 
-     * @param {*} req 
-     */
-     getCVStrings = (req) => {
-        return {              
-            active:  'cv', 
-            title:   req.t('cv'),
-            bio:     req.t('bio'),   
-            welcome: req.t('welcome'),
-            sitelanguage: req.t('sitelanguage'),
-            aboutme:    req.t('aboutme'),
-            portfolio:  req.t('portfolio'),
-            services:   req.t('services'),
-            resume:     req.t('resume'),
-            contact:    req.t('contact'),
-            themetrema: req.t('themetrema'),
-            purplemode: req.t('purplemode'),
-            roledescription: req.t('roledescription'),
-            skills: req.t('skills'),
-            skillsdescription: req.t('skillsdescription'),            
-            tremadesc: req.t('tremadesc'),
-            footertitle: req.t('footertitle'),
-            footerdesc: req.t('footerdesc'),
-            english: req.t('english'),
-            portuguese: req.t('portuguese'),
-        };
-    }
-
-    /**
-     * Render CV page.
+     * Render Contact page.
      * 
      * @param {*} req 
      * @param {*} res 
@@ -424,31 +146,19 @@
 
     /**
      * Return strings of page Contact.
+     * 
      * @param {*} req 
      * @returns 
      */
     getContactStrings = (req) => {
+        const strings = getStrings(req);
         return {
-            active:       'contact', 
-            title:        req.t('contact'),
-            bio:          req.t('bio'),   
-            welcome:      req.t('welcome'),
-            sitelanguage: req.t('sitelanguage'),
-            aboutme:      req.t('aboutme'),
-            portfolio:    req.t('portfolio'),
-            services:     req.t('services'),
-            resume:       req.t('resume'),
-            contact:      req.t('contact'),
-            themetrema:   req.t('themetrema'),
-            purplemode:   req.t('purplemode'),
-            skills:       req.t('skills'),            
-            tremadesc:    req.t('tremadesc'),
-            footertitle:  req.t('footertitle'),
-            footerdesc:   req.t('footerdesc'),
-            roledescription:   req.t('roledescription'),
-            skillsdescription: req.t('skillsdescription'),
+            ...strings,
+            active: 'contact', 
+            title:  req.t('contact')
         };
     }
+
     /**
      * Render page with strings.
      * 
@@ -462,6 +172,58 @@
             console.log(e);
             res.status(500).send(e.message);
         }
+    }
+
+    /**
+     * All comom strings.
+     * 
+     * @param {*} req 
+     * @returns 
+     */
+    getStrings = (req) => {
+        return {
+            aboutme: req.t('aboutme'),
+            bio:     req.t('bio'),   
+            cite:    req.t('cite'),
+            contact: req.t('contact'),
+            donate:  req.t('donate'),
+            english: req.t('english'),
+            footerdesc: req.t('footerdesc'),
+            footertitle: req.t('footertitle'),
+            htmldesc: req.t('htmldesc'),
+            javascriptdesc: req.t('javascriptdesc'),
+            jobs: req.t('jobs'),
+            mainrole:   req.t('mainrole'),
+            others:     req.t('others'),   
+            ownbussiness: req.t('ownbussiness'),
+            ownbussinesslink: req.t('ownbussinesslink'),
+            phpdesc: req.t('phpdesc'),
+            portfolio:  req.t('portfolio'),
+            portuguese: req.t('portuguese'),
+            purplemode: req.t('purplemode'),
+            resume:     req.t('resume'),
+            roledescription: req.t('roledescription'),
+            services:   req.t('services'),
+            sitelanguage: req.t('sitelanguage'),
+            skills: req.t('skills'),
+            skillsdescription: req.t('skillsdescription'),
+            sourcecode: req.t('sourcecode'),
+            sqldesc: req.t('sqldesc'),
+            talk1: req.t('talk1'),
+            talk2: req.t('talk2'),
+            talk3: req.t('talk3'),
+            talk4: req.t('talk4'),
+            talks: req.t('talks'),
+            talksdesc: req.t('talksdesc'),
+            themetrema: req.t('themetrema'),
+            trema: req.t('trema'),
+            tremadesc: req.t('tremadesc'),
+            tremadownloads: req.t('tremadownloads'),
+            tremasites: req.t('tremasites'),
+            welcome: req.t('welcome'),
+            whatidid: req.t('whatidid'),
+            whatididdesc: req.t('whatididdesc'),
+        };
     }
  }
 

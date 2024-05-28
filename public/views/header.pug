@@ -38,7 +38,7 @@ header#header.header.text-center
                             a.d-inline-block.text-light.no-text-decoration(href="?lang=en") en
                             a.d-inline-block.text-light.no-text-decoration.ml-1(href="?lang=pt") pt
                     hr.mb-4            
-                ul.navbar-nav.flex-column.text-start
+                ul.navbar-nav.flex-column.text-start.w-100
                     li.nav-item(class = active === "home" ? "active" : "")
                         a.nav-link(href="/")
                             i.fa.fa-user.text-light
@@ -46,11 +46,7 @@ header#header.header.text-center
                     li.nav-item(class = active === "skills" ? "active" : "")
                         a.nav-link(href="/skills")
                             i.fa.fa-file-code-o.text-light
-                            span.ml-2 #{skills} 
-                    li.nav-item(class = active === "clients" ? "active" : "")
-                        a.nav-link(href="/jobs")
-                            i.fa.fa-map-marker.text-light
-                            span.ml-2 #{jobs} 
+                            span.ml-2 #{skills}
                     li.nav-item(class = active === "portfolio" ? "active" : "")
                         a.nav-link(href="/portfolio")
                             i.fa.fa-graduation-cap.text-light
@@ -69,9 +65,9 @@ header#header.header.text-center
                             span.ml-2 GitHub Trema
                 div.purple-mode-toggle.text-center.w-100
                     hr.mb-4
-                    ul.navbar-nav.flex-column.text-center
-                        li.nav-item
+                    ul.navbar-nav.flex-column
+                        li.nav-item.d-flex.align-items-center.pl-4
                             i.fa.fa-adjust 
                             span.ml-2 #{purplemode}
-                        input#purplemode.toggle(type="checkbox" onclick="purpleMode()")
-                        label.toggle-btn.mx-auto.mb-0(for="purplemode")
+                            input#purplemode.toggle(type="checkbox" onclick="purpleMode()")
+                            label.toggle-btn.mx-auto.mb-0(for="purplemode")

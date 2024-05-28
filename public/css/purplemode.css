@@ -15,21 +15,32 @@ body.purple-mode .theme-bg-light,
 body.purple-mode,
 body.purple-mode #root {
     background: var(--darkpurple) !important;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, var(--darkpurple) 30%, rgba(0,0,0,1) 100%) !important;
     color: white;
 }
 
+body.purple-mode .about-me-section,
 body.purple-mode .theme-bg-light-gradient,
+body.purple-mode .section-proof,
 body.purple-mode .skills-section {
     background: var(--darkpurple);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, var(--darkpurple) 30%);
     color: white;
 }
 
-body.purple-mode .about-me-section,
+body.purple-mode .section-proof .uruca .logo-light {
+    display: none;
+}
+
+body.purple-mode .section-proof .uruca .logo-purple {
+    display: block;
+}
+
+/* body.purple-mode .about-me-section,
 body.purple-mode .section-proof {    
     background: linear-gradient(180deg, #000 0%, #121212 30%) !important;
     color: white;
-}
+} */
 
 body.purple-mode .profile-teaser .tagline,
 body.purple-mode .item-title {
