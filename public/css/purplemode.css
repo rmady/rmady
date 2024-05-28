@@ -36,11 +36,9 @@ body.purple-mode .section-proof .uruca .logo-purple {
     display: block;
 }
 
-/* body.purple-mode .about-me-section,
-body.purple-mode .section-proof {    
-    background: linear-gradient(180deg, #000 0%, #121212 30%) !important;
-    color: white;
-} */
+body.purple-mode .bg-header {
+    opacity: .05;
+}
 
 body.purple-mode .profile-teaser .tagline,
 body.purple-mode .item-title {
