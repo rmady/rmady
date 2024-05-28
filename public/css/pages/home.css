@@ -567,6 +567,10 @@ section.section-proof h2 {
 }
 
 @media (max-width: 990px) {
+    .about-me-section {
+        padding: 0rem;
+    }
+    
     .skills-block {
         margin: 5px;
         margin-top: 40px;
