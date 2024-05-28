@@ -78,6 +78,10 @@ h3.section-title {
     margin-left: -40px;
 }
 
+.skills-blocks > div {
+    min-height: 80vh;
+}
+
 .skills-block {
     max-width: 300px;
 }

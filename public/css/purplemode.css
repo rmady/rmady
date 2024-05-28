@@ -83,7 +83,8 @@ body.purple-mode .btn-secondary {
 }
 
 body.purple-mode section.section-proof .box,
-body.purple-mode .talks-block {
+body.purple-mode .talks-block,
+body.purple-mode section.portfolio-section .box {
     box-shadow: 0px 30px 40px -20px #525252;    
     background: rgb(0,0,0);
     background: radial-gradient(circle, var(--darkpurple) 0%, rgba(0,0,0,1) 50%) !important;
