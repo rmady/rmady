@@ -126,16 +126,6 @@ li.nav-item i.fa {
     font-weight: bold;
 }
 
-
-.navigation {
-    display: none;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 2rem 5rem;
-    width: calc(100% - 280px);
-}
-
 @media (max-width: 990px) {
     .header {
         height: 60px;
