@@ -77,6 +77,7 @@ npm test
 
 The site is deployed to a DigitalOcean Droplet running Debian + Nginx + PM2.
 
+
 ### Manual Deploy
 
 ```bash
@@ -94,7 +95,7 @@ Pushes to `main` trigger a GitHub Actions workflow that deploys via SSH automati
 - `DROPLET_IP` — Droplet IP address
 - `SSH_PRIVATE_KEY` — SSH private key for the `deploy` user
 
-## Language Detection
+## Language Detection 
 
 The site auto-detects the user's language from (in order):
 
