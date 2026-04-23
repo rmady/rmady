@@ -107,3 +107,4 @@ Supported languages: **English** (`en`) and **Portuguese** (`pt`). Falls back to
 ## License
 
 GPL-3.0 — see [LICENSE](LICENSE).
+
