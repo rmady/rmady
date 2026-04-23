@@ -16,7 +16,7 @@ const
     Backend    = require('i18next-fs-backend'),
     middleware = require('i18next-http-middleware');
 
-const port = 3000;
+const port = process.env.PORT || 3002;
 const app  = express();
 i18next
   .use(Backend)
